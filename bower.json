@@ -1,0 +1,30 @@
+{
+  "name": "tocausan.github.io",
+  "homepage": "tocausan.github.io",
+  "authors": [
+    "tocausan <tocausan@gmail.com>"
+  ],
+  "description": "tocausan github hosted showcase",
+  "main": "index.html",
+  "keywords": [
+    "tocausan"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "^1.6.0",
+    "angular-ui-router": "^0.3.2",
+    "angular": "^1.6.0",
+    "angular-messages": "^1.6.0",
+    "d3": "^4.4.0",
+    "font-awesome": "^4.7.0",
+    "material-design-lite": "^1.2.1"
+  }
+}

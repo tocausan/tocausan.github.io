@@ -1,1 +1,217 @@
-hello world !
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tocausan</title>
+
+    <!-- mdl -->
+    <link rel="stylesheet" href="assets/bower_components/material-design-lite/material.min.css">
+    <script src="assets/bower_components/material-design-lite/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.amber-pink.min.css" />
+
+    <!-- angular -->
+    <script src="assets/bower_components/angular/angular.min.js"></script>
+    <script src="assets/bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="assets/bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="assets/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!-- d3 -->
+    <script src="assets/bower_components/d3/d3.min.js"></script>
+
+    <!-- app -->
+    <script src="assets/js/app.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+
+</head>
+<body ng-app='app' ng-controller='mainCtrl'>
+
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+
+            <div class="mdl-layout-spacer"></div>
+
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+
+                <!--
+                <label class="mdl-button mdl-js-button mdl-button--icon"
+                       for="fixed-header-drawer-exp">
+                    <i class="material-icons">search</i>
+                </label>
+                -->
+
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" name="sample"
+                           id="fixed-header-drawer-exp">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="mdl-layout__tab-bar ">
+            <a href="#online-presence" class="mdl-layout__tab is-active">Online presence</a>
+            <!--
+            <a href="#fixed-tab-2" class="mdl-layout__tab">CV</a>
+            -->
+        </div>
+    </header>
+
+    <div class="mdl-layout__drawer">
+        <!-- title -->
+        <span class="mdl-layout-title">tocausan</span>
+
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="https://github.com/tocausan">Github</a>
+            <a class="mdl-navigation__link" href="https://instagram.com/tocausan">Instagram</a>
+            <a class="mdl-navigation__link" href="https://500px.com/tocausan">500px</a>
+            <a class="mdl-navigation__link" href="https://www.behance.net/tocausan">Behance</a>
+            <a class="mdl-navigation__link" href="https://medium.com/@tocausan">Medium</a>
+            <a class="mdl-navigation__link" href="https://www.linkedin.com/in/tomascaufriez">Linkedin</a>
+            <a class="mdl-navigation__link" href="https://www.facebook.com/coucoucaptain">Facebook</a>
+        </nav>
+    </div>
+
+    <main class="mdl-layout__content">
+
+        <section class="mdl-layout__tab-panel is-active" id="online-presence">
+            <div class="page-content mdl-grid mdl-cell mdl-cell--12-col">
+
+
+                <div class="card-container demo-card-wide mdl-card mdl-cell--8-col-tablet mdl-cell--6-col">
+                    <!-- Github -->
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-coding">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">Github</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Open source code.
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="https://github.com/tocausan" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                See more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card-container demo-card-wide mdl-card mdl-cell--8-col-tablet mdl-cell--6-col">
+                    <!-- Instagram -->
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-photography">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">Instagram</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Daily visual porn.
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="https://www.instagram.com/tocausan/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                See more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-container demo-card-wide mdl-card mdl-cell--8-col-tablet mdl-cell--6-col">
+                    <!-- 500px -->
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-photography">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">500px</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Some visual porn you can buy.
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="https://500px.com/tocausan" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                See more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-container demo-card-wide mdl-card mdl-cell--8-col-tablet mdl-cell--6-col">
+                    <!-- Behance -->
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-design">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">Behance</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Some other creative and visual porn.
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="https://www.behance.net/tocausan" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                See more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-container demo-card-wide mdl-card mdl-cell--8-col-tablet mdl-cell--6-col">
+                    <!-- Medium -->
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-blog">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">Medium</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Some stories.
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="https://medium.com/@tocausan" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                See more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-container demo-card-wide mdl-card mdl-cell--8-col-tablet mdl-cell--6-col">
+                    <!-- Linkedin -->
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-social">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">Linkedin</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Link me.
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="https://www.linkedin.com/in/tomascaufriez" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                See more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-container demo-card-wide mdl-card mdl-cell--8-col-tablet mdl-cell--6-col">
+                    <!-- Facebook -->
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-social">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">Facebook</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            I'm on Facebook too.
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="https://www.facebook.com/coucoucaptain" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                See more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+</div>
+
+</body>
+</html>

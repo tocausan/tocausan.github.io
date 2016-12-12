@@ -1,0 +1,36 @@
+.page-content{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.card-container{
+    padding: 2%;
+}
+.demo-card-wide.mdl-card {
+    display: block;
+    float: left;
+}
+.demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+}
+.demo-card-wide > .mdl-card__menu {
+    color: #fff;
+}
+
+.card-coding > .mdl-card__title{
+    background: url('../img/coding.small.jpg') center / cover;
+}
+.card-photography > .mdl-card__title{
+    background: url('../img/photography.small.jpg') center / cover;
+}
+.card-design > .mdl-card__title{
+    background: url('../img/design.small.jpg') center / cover;
+}
+.card-social > .mdl-card__title{
+    background: url('../img/social.small.jpg') center / cover;
+}
+.card-blog > .mdl-card__title{
+    background: url('../img/blog.small.jpg') center / cover;
+}
