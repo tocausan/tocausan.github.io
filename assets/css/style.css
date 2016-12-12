@@ -22,6 +22,9 @@
 .card-coding > .mdl-card__title{
     background: url('../img/coding.small.jpg') center / cover;
 }
+.card-coding-2 > .mdl-card__title{
+    background: url('../img/coding-2.small.jpg') center / cover;
+}
 .card-photography > .mdl-card__title{
     background: url('../img/photography.small.jpg') center / cover;
 }
@@ -36,6 +39,9 @@
 }
 .card-social > .mdl-card__title{
     background: url('../img/social.small.jpg') center / cover;
+}
+.card-social-2 > .mdl-card__title{
+    background: url('../img/social-2.small.jpg') center / cover;
 }
 .card-blog > .mdl-card__title{
     background: url('../img/blog.small.jpg') center / cover;
