@@ -25,6 +25,12 @@
 .card-photography > .mdl-card__title{
     background: url('../img/photography.small.jpg') center / cover;
 }
+.card-photography-2 > .mdl-card__title{
+    background: url('../img/photography-2.small.jpg') center / cover;
+}
+.card-photography-3 > .mdl-card__title{
+    background: url('../img/photography-3.small.jpg') center / cover;
+}
 .card-design > .mdl-card__title{
     background: url('../img/design.small.jpg') center / cover;
 }
