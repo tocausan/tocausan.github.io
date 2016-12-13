@@ -37,6 +37,12 @@
 .card-design > .mdl-card__title{
     background: url('../img/design.small.jpg') center / cover;
 }
+.card-inspiration > .mdl-card__title{
+    background: url('../img/inspiration.small.jpg') center / cover;
+}
+.card-inspiration-2 > .mdl-card__title{
+    background: url('../img/inspiration-2.small.jpg') center / cover;
+}
 .card-social > .mdl-card__title{
     background: url('../img/social.small.jpg') center / cover;
 }
