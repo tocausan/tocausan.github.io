@@ -46,3 +46,6 @@
 .card-blog > .mdl-card__title{
     background: url('../img/blog.small.jpg') center / cover;
 }
+.card-mail > .mdl-card__title{
+    background: url('../img/mail.small.jpg') center / cover;
+}
