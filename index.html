@@ -59,15 +59,12 @@
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
 
-                <!--
                 <label class="mdl-button mdl-js-button mdl-button--icon"
                        for="fixed-header-drawer-exp">
                     <i class="material-icons">search</i>
                 </label>
-                -->
-
                 <div class="mdl-textfield__expandable-holder">
-                    <input class="mdl-textfield__input" type="text" name="sample"
+                    <input ng-model='search' class="mdl-textfield__input" type="text" name="sample"
                            id="fixed-header-drawer-exp">
                 </div>
             </div>
@@ -90,18 +87,13 @@
         </span>
 
         <nav class="mdl-navigation">
-            <a target="_blank" class="mdl-navigation__link" href="https://github.com/tocausan" title="link to Github">Github</a>
-            <a target="_blank" class="mdl-navigation__link" href="https://instagram.com/tocausan" title="link to Instagram">Instagram</a>
-            <a target="_blank" class="mdl-navigation__link" href="https://www.flickr.com/photos/tocausan" title="link to Flickr">Flickr</a>
-            <a target="_blank" class="mdl-navigation__link" href="https://500px.com/tocausan" title="link to 500px">500px</a>
-            <a target="_blank" class="mdl-navigation__link" href="https://www.behance.net/tocausan" title="link to Behance">Behance</a>
-            <a target="_blank" class="mdl-navigation__link" href="https://jp.pinterest.com/tocausan" title="link to Pinterest">Pinterest</a>
-            <a target="_blank" class="mdl-navigation__link" href="https://soundcloud.com/tomas-caufriez-sanchez" title="link to Soundclouds">Soundclouds</a>
-            <a target="_blank" class="mdl-navigation__link" href="https://medium.com/@tocausan" title="link to Medium">Medium</a>
-            <a target="_blank" class="mdl-navigation__link" href="https://www.linkedin.com/in/tomascaufriez" title="link to Linkedin">Linkedin</a>
-            <a target="_blank" class="mdl-navigation__link" href="https://www.facebook.com/coucoucaptain" title="link to Facebook">Facebook</a>
-            <a target="_blank" class="mdl-navigation__link" href="http://codepen.io/tocausan" title="link to Codepen">Codepen</a>
-            <a target="_blank" class="mdl-navigation__link" href="mailto:tocausan@gmail.com" title="link to Gmail">Gmail</a>
+            <a ng-repeat="card in cards"
+                    target="_blank"
+                    class="mdl-navigation__link"
+                    href="{{card.link}}"
+                    title="{{card.title}}">
+                {{card.name}}
+            </a>
         </nav>
     </div>
 
@@ -110,218 +102,18 @@
         <section class="mdl-layout__tab-panel is-active" id="online-presence">
             <div class="page-content mdl-grid mdl-cell mdl-cell--12-col">
 
-
-                <div class="card-container demo-card-wide mdl-card mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col-desktop">
-                    <!-- Github -->
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-coding">
+                <div ng-repeat="card in cards | filter: search"
+                        class="card-container demo-card-wide mdl-card mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col-desktop">
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col {{card.class}}">
                         <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Github</h2>
+                            <h2 class="mdl-card__title-text">{{card.name}}</h2>
                         </div>
                         <div class="mdl-card__supporting-text">
-                            Open source code.
+                            {{card.description}}
                         </div>
                         <div class="mdl-card__actions mdl-card--border">
-                            <a target="_blank" href="https://github.com/tocausan" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" title="link to Github">
-                                See more on Github
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="card-container demo-card-wide mdl-card mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col-desktop">
-                    <!-- Instagram -->
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-photography">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Instagram</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            Daily visual porn.
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a target="_blank" href="https://www.instagram.com/tocausan/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" title="link to Instagram">
-                                See more on Instagram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card-container demo-card-wide mdl-card mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col-desktop">
-                    <!-- Flickr -->
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-photography-2">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Flickr</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            More visual porn in higher quality.
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a target="_blank" href="https://www.flickr.com/photos/tocausan/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" title="link to Flickr">
-                                See more on Flickr
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card-container demo-card-wide mdl-card mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col-desktop">
-                    <!-- 500px -->
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-photography-3">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">500px</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            Some visual you could buy.
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a target="_blank" href="https://500px.com/tocausan" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" title="link to 500px">
-                                See more on 500px
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card-container demo-card-wide mdl-card mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col-desktop">
-                    <!-- Behance -->
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-design">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Behance</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            Some other creative and visual porn.
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a target="_blank" href="https://www.behance.net/tocausan" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" title="link to Behance">
-                                See more Behance
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card-container demo-card-wide mdl-card mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col-desktop">
-                    <!-- Pinterest -->
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-inspiration">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Pinterest</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            Visual inspiration flow.
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a target="_blank" href="https://jp.pinterest.com/tocausan" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" title="link to Pinterest">
-                                See more Pinterest
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card-container demo-card-wide mdl-card mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col-desktop">
-                    <!-- Soundclouds -->
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-inspiration-2">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Soundclouds</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            Sound inspiration flow.
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a target="_blank" href="https://soundcloud.com/tomas-caufriez-sanchez" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" title="link to Soundclouds">
-                                See more Soundclouds
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card-container demo-card-wide mdl-card mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col-desktop">
-                    <!-- Medium -->
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-blog">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Medium</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            Some stories.
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a target="_blank" href="https://medium.com/@tocausan" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" title="link to Medium">
-                                See more on Medium
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card-container demo-card-wide mdl-card mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col-desktop">
-                    <!-- Linkedin -->
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-social">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Linkedin</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            Link me.
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a target="_blank" href="https://www.linkedin.com/in/tomascaufriez" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" title="link to Linkedin">
-                                See more on Linkedin
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card-container demo-card-wide mdl-card mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col-desktop">
-                    <!-- Facebook -->
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-social-2">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Facebook</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            I'm on Facebook too.
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a target="_blank" href="https://www.facebook.com/coucoucaptain" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" title="link to Facebook">
-                                See more on Facebook
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card-container demo-card-wide mdl-card mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col-desktop">
-                    <!-- Codepen -->
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-coding-2">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Codepen</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            Code tester.
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a target="_blank" href="http://codepen.io/tocausan/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" title="link to Codepen">
-                                See more on Codepen
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card-container demo-card-wide mdl-card mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col-desktop">
-                    <!-- Gmail -->
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col card-mail">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Gmail</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            Mail.
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a target="_blank" href="mailto:tocausan@gmail.com" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" title="link to Gmail">
-                                Send greeting on Gmail
+                            <a target="_blank" href="{{card.link}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" title="{{card.title}}">
+                                {{card.buttonText}}
                             </a>
                         </div>
                     </div>
