@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="826c38ae-9058-4b75-9cfd-0909a77384a1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robots.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sitemap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/blog.small.jpg" afterPath="$PROJECT_DIR$/assets/img/blog.small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/coding-2.small.jpg" afterPath="$PROJECT_DIR$/assets/img/coding-2.small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/coding.small.jpg" afterPath="$PROJECT_DIR$/assets/img/coding.small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/design.small.jpg" afterPath="$PROJECT_DIR$/assets/img/design.small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/mail.small.jpg" afterPath="$PROJECT_DIR$/assets/img/mail.small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/photography-2.small.jpg" afterPath="$PROJECT_DIR$/assets/img/photography-2.small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/photography-3.small.jpg" afterPath="$PROJECT_DIR$/assets/img/photography-3.small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/photography.small.jpg" afterPath="$PROJECT_DIR$/assets/img/photography.small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/social.small.jpg" afterPath="$PROJECT_DIR$/assets/img/social.small.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="tocausan.github.io.iws" />
@@ -29,8 +35,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+            <state relative-caret-position="430">
+              <caret line="120" column="28" selection-start-line="120" selection-start-column="28" selection-end-line="120" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -228,6 +234,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tocausan.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tocausan.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -310,12 +334,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481562384887</updated>
-      <workItem from="1481562386071" duration="13707000" />
+      <workItem from="1481562386071" duration="14156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13707000" />
+    <option name="totallyTimeSpent" value="14156000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1024" extended-state="6" />
@@ -445,8 +469,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="430">
+          <caret line="120" column="28" selection-start-line="120" selection-start-column="28" selection-end-line="120" selection-end-column="28" />
           <folding />
         </state>
       </provider>
