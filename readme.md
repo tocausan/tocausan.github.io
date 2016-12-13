@@ -1,13 +1,27 @@
 # tocausan.github.io
 [![Status](https://img.shields.io/badge/Status-On_air-green.svg)]()
+[![SEO](https://img.shields.io/badge/SEO-Optimized-green.svg)]()
+
 
 ## Description
 tocausan github hosted showcase.
+- [Github](https://github.com/tocausan)
+- [Instagram](https://instagram.com/tocausan)
+- [Flickr](https://www.flickr.com/photos/tocausan)
+- [500px](https://500px.com/tocausan)
+- [Behance](https://www.behance.net/tocausan)
+- [Medium](https://medium.com/@tocausan)
+- [Linkedin](https://www.linkedin.com/in/tomascaufriez)
+- [Facebook](https://www.facebook.com/coucoucaptain)
+- [Codepen](http://codepen.io/tocausan)
+- [Gmail](mailto:tocausan@gmail.com)
+
 
 ## Link
 [There it is !](http://tocausan.github.io)
 
-### Architecture
+
+### Sitemap
 ```
 - readme.md             What are you reading now ?
 - index.html            Because you need to start somewhere
