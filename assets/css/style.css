@@ -11,7 +11,7 @@
     display: block;
     float: left;
 }
-.demo-card-wide > .mdl-card__title {
+.demo-card-wide .mdl-card__title {
     color: #fff;
     height: 176px;
 }
@@ -19,45 +19,45 @@
     color: #fff;
 }
 
-.card-coding > .mdl-card__title{
+.card-coding .mdl-card__title{
     background: url('../img/coding.small.jpg') center / cover;
 }
-.card-coding-2 > .mdl-card__title{
+.card-coding-2 .mdl-card__title{
     background: url('../img/coding-2.small.jpg') center / cover;
 }
-.card-photography > .mdl-card__title{
+.card-photography .mdl-card__title{
     background: url('../img/photography.small.jpg') center / cover;
 }
-.card-photography-2 > .mdl-card__title{
+.card-photography-2 .mdl-card__title{
     background: url('../img/photography-2.small.jpg') center / cover;
 }
-.card-photography-3 > .mdl-card__title{
+.card-photography-3 .mdl-card__title{
     background: url('../img/photography-3.small.jpg') center / cover;
 }
-.card-design > .mdl-card__title{
+.card-design .mdl-card__title{
     background: url('../img/design.small.jpg') center / cover;
 }
-.card-inspiration > .mdl-card__title{
+.card-inspiration .mdl-card__title{
     background: url('../img/inspiration.small.jpg') center / cover;
 }
-.card-inspiration-2 > .mdl-card__title{
+.card-inspiration-2 .mdl-card__title{
     background: url('../img/inspiration-2.small.jpg') center / cover;
 }
-.card-social > .mdl-card__title{
+.card-social .mdl-card__title{
     background: url('../img/social.small.jpg') center / cover;
 }
-.card-social-2 > .mdl-card__title{
+.card-social-2 .mdl-card__title{
     background: url('../img/social-2.small.jpg') center / cover;
 }
-.card-social-3 > .mdl-card__title{
+.card-social-3 .mdl-card__title{
     background: url('../img/social-3.small.jpg') center / cover;
 }
-.card-social-4 > .mdl-card__title{
+.card-social-4 .mdl-card__title{
     background: url('../img/social-4.small.jpg') center / cover;
 }
-.card-blog > .mdl-card__title{
+.card-blog .mdl-card__title{
     background: url('../img/blog.small.jpg') center / cover;
 }
-.card-mail > .mdl-card__title{
+.card-mail .mdl-card__title{
     background: url('../img/mail.small.jpg') center / cover;
 }

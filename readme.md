@@ -15,6 +15,8 @@ tocausan github hosted showcase.
 - [Medium](https://medium.com/@tocausan)
 - [Linkedin](https://www.linkedin.com/in/tomascaufriez)
 - [Facebook](https://www.facebook.com/coucoucaptain)
+- [Facebook page](https://www.facebook.com/tocausan)
+- [Twitter](https://twitter.com/tocausan)
 - [Codepen](http://codepen.io/tocausan)
 - [Gmail](mailto:tocausan@gmail.com)
 

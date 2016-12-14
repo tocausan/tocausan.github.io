@@ -105,12 +105,16 @@
                 <div ng-repeat="card in cards | filter: search"
                         class="card-container demo-card-wide mdl-card mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col-desktop">
                     <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col {{card.class}}">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">{{card.name}}</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            {{card.description}}
-                        </div>
+
+                        <a target="_blank" href="{{card.link}}" class=" mdl-js-button mdl-js-ripple-effect" title="{{card.title}}">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">{{card.name}}</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                {{card.description}}
+                            </div>
+                        </a>
+
                         <div class="mdl-card__actions mdl-card--border">
                             <a target="_blank" href="{{card.link}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" title="{{card.title}}">
                                 {{card.buttonText}}
