@@ -89,7 +89,7 @@ angular.module('app', [])
                 link: 'https://www.facebook.com/tocausan',
                 buttonText: 'See more on Facebook page',
                 description: 'I am there too.',
-                class: 'card-social-2'
+                class: 'card-social-4'
             },
             {
                 name: 'Twitter',
