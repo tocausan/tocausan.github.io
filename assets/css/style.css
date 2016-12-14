@@ -52,6 +52,9 @@
 .card-social-3 > .mdl-card__title{
     background: url('../img/social-3.small.jpg') center / cover;
 }
+.card-social-4 > .mdl-card__title{
+    background: url('../img/social-4.small.jpg') center / cover;
+}
 .card-blog > .mdl-card__title{
     background: url('../img/blog.small.jpg') center / cover;
 }
