@@ -92,10 +92,10 @@ angular.module('app', [])
                 class: 'card-social-2'
             },
             {
-                name: 'Tweeter',
-                title: 'link to Tweeter',
+                name: 'Twitter',
+                title: 'link to Twitter',
                 link: 'https://twitter.com/tocausan',
-                buttonText: 'See more on Tweeter',
+                buttonText: 'See more on Twitter',
                 description: 'I am there too.',
                 class: 'card-social-3'
             },
