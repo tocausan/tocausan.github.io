@@ -84,6 +84,14 @@ angular.module('app', [])
                 class: 'card-social-2'
             },
             {
+                name: 'Tweeter',
+                title: 'link to Tweeter',
+                link: 'https://twitter.com/tocausan',
+                buttonText: 'See more on Tweeter',
+                description: 'I am there too.',
+                class: 'card-social-3'
+            },
+            {
                 name: 'Codepen',
                 title: 'link to Codepen',
                 link: 'http://codepen.io/tocausan',
