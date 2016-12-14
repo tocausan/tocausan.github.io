@@ -76,10 +76,10 @@ angular.module('app', [])
                 class: 'card-social'
             },
             {
-                name: 'Facebook',
-                title: 'link to Facebook',
-                link: 'https://www.facebook.com/coucoucaptain',
-                buttonText: 'See more on Facebook',
+                name: 'Facebook page',
+                title: 'link to Facebook page',
+                link: 'https://www.facebook.com/tocausan',
+                buttonText: 'See more on Facebook page',
                 description: 'I am there too.',
                 class: 'card-social-2'
             },
@@ -98,6 +98,14 @@ angular.module('app', [])
                 buttonText: 'See more on Codepen',
                 description: 'Code tester.',
                 class: 'card-coding-2'
+            },
+            {
+                name: 'Facebook',
+                title: 'link to Facebook',
+                link: 'https://www.facebook.com/coucoucaptain',
+                buttonText: 'See more on Facebook',
+                description: 'I am there too.',
+                class: 'card-social-2'
             },
             {
                 name: 'Gmail',
