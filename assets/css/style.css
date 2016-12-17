@@ -19,6 +19,12 @@
     color: #fff;
 }
 
+.demo-card-wide > .mdl-card__supporting-text.description{
+    height: 35px;
+    overflow: scroll;
+}
+
+
 .card-coding .mdl-card__title{
     background: url('../img/coding.small.jpg') center / cover;
 }

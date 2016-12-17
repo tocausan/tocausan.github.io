@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="assets/bower_components/material-design-lite/material.min.css">
     <script src="assets/bower_components/material-design-lite/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.amber-pink.min.css" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.amber-pink.min.css"/>
 
     <!-- angular -->
     <script src="assets/bower_components/angular/angular.min.js"></script>
@@ -33,14 +33,21 @@
 
     <!-- app -->
     <script src="assets/js/app.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css"/>
 
     <!-- google analytics -->
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-88912710-1', 'auto');
         ga('send', 'pageview');
@@ -88,10 +95,10 @@
 
         <nav class="mdl-navigation">
             <a ng-repeat="card in cards"
-                    target="_blank"
-                    class="mdl-navigation__link"
-                    href="{{card.link}}"
-                    title="{{card.title}}">
+               target="_blank"
+               class="mdl-navigation__link"
+               href="{{card.link}}"
+               title="{{card.title}}">
                 {{card.name}}
             </a>
         </nav>
@@ -103,20 +110,23 @@
             <div class="page-content mdl-grid mdl-cell mdl-cell--12-col">
 
                 <div ng-repeat="card in cards | filter: search"
-                        class="card-container demo-card-wide mdl-card mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col-desktop">
+                     class="card-container demo-card-wide mdl-card mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col-desktop">
                     <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col {{card.class}}">
 
-                        <a target="_blank" href="{{card.link}}" class=" mdl-js-button mdl-js-ripple-effect" title="{{card.title}}">
-                            <div class="mdl-card__title">
-                                <h2 class="mdl-card__title-text">{{card.name}}</h2>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                {{card.description}}
-                            </div>
-                        </a>
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">{{card.name}}</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text description">
+                            {{card.description}} <br>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            — {{card.description_author}} —
+                        </div>
 
                         <div class="mdl-card__actions mdl-card--border">
-                            <a target="_blank" href="{{card.link}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" title="{{card.title}}">
+                            <a target="_blank" href="{{card.link}}"
+                               class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                               title="{{card.title}}">
                                 {{card.buttonText}}
                             </a>
                         </div>
