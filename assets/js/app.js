@@ -9,6 +9,8 @@ angular.module('app', [])
 
 
         (function promiseMe(){
+            console.log(socialUrl)
+
             new Promise(function(resolve, reject) {
                 // New XMLHttpRequest
                 var xhr = new XMLHttpRequest();
