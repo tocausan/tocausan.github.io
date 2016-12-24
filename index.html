@@ -33,6 +33,9 @@
 
     <!-- app -->
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/tab.controllers.js"></script>
+    <script src="assets/js/social.controllers.js"></script>
+    <script src="assets/js/cv.controllers.js"></script>
     <link rel="stylesheet" href="assets/css/style.css"/>
 
     <!-- google analytics -->
@@ -54,18 +57,21 @@
     </script>
 
 </head>
-<body ng-app='app' ng-controller='mainCtrl'>
+<body ng-app='app' ng-controller='mainCtrl' ng-cloak>
 
 
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
-        <div class="mdl-layout__header-row">
+        <!-- Tabs -->
+        <div class="mdl-layout__tab-bar">
+            <a href="#online-presence" class="mdl-layout__tab is-active">Online presence</a>
+            <!--
+            <a href="#cv" class="mdl-layout__tab">CV</a>
+            -->
 
             <div class="mdl-layout-spacer"></div>
-
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
-                  mdl-textfield--floating-label mdl-textfield--align-right">
-
+            <!-- Search bar -->
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
                 <label class="mdl-button mdl-js-button mdl-button--icon"
                        for="fixed-header-drawer-exp">
                     <i class="material-icons">search</i>
@@ -76,17 +82,11 @@
                 </div>
             </div>
         </div>
-
-        <!-- Tabs -->
-        <div class="mdl-layout__tab-bar ">
-            <a href="#online-presence" class="mdl-layout__tab is-active">Online presence</a>
-            <!--
-            <a href="#fixed-tab-2" class="mdl-layout__tab">CV</a>
-            -->
-        </div>
     </header>
 
-    <div class="mdl-layout__drawer">
+
+    <!-- side nav -->
+    <div class="mdl-layout__drawer" ng-controller='tabCtrl'>
         <!-- title -->
         <span class="mdl-layout-title">
             <img src="assets/img/icon.png" alt="tocausan-icon" width="90%">
@@ -94,21 +94,23 @@
         </span>
 
         <nav class="mdl-navigation">
-            <a ng-repeat="card in cards"
+            <a ng-repeat="tab in tabs"
                target="_blank"
                class="mdl-navigation__link"
-               href="{{card.link}}"
-               title="{{card.title}}">
-                {{card.name}}
+               href="{{tab.link}}"
+               title="{{tab.title}}">
+                {{tab.name}}
             </a>
         </nav>
     </div>
 
     <main class="mdl-layout__content">
 
-        <section class="mdl-layout__tab-panel is-active" id="online-presence">
+        <!-- online presence -->
+        <section class="mdl-layout__tab-panel is-active" id="online-presence" ng-controller='socialCtrl'>
             <div class="page-content mdl-grid mdl-cell mdl-cell--12-col">
 
+                <!-- card -->
                 <div ng-repeat="card in cards | filter: search"
                      class="card-container demo-card-wide mdl-card mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col-desktop">
                     <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell--12-col {{card.class}}">
@@ -132,12 +134,18 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- cv -->
+        <!--
+        <section class="mdl-layout__tab-panel" id="cv" ng-controller='cvCtrl'>
+            <div class="page-content mdl-grid mdl-cell mdl-cell--12-col">
 
             </div>
         </section>
+        -->
     </main>
-
 </div>
-
 </body>
 </html>
