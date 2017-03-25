@@ -1,0 +1,72 @@
+{
+    "media": [{
+            "name": "instagram",
+            "mdi_icon": "mdi-instagram",
+            "link": "https://instagram.com/tocausan",
+            "qr_code": "assets/qr/instagram-tocausan.png",
+            "user": "tocausan"
+        },
+        {
+            "name": "behance",
+            "mdi_icon": "mdi-behance",
+            "link": "https://www.behance.net/tocausan",
+            "qr_code": "assets/qr/behance-tocausan.png",
+            "user": "tocausan"
+        },
+        {
+            "name": "pinterest",
+            "mdi_icon": "mdi-pinterest",
+            "link": "https://jp.pinterest.com/tocausan",
+            "qr_code": "assets/qr/pinterest-tocausan.png",
+            "user": "tocausan"
+        },
+        {
+            "name": "soundcloud",
+            "mdi_icon": "mdi-soundcloud",
+            "link": "https://soundcloud.com/tocausan",
+            "qr_code": "assets/qr/soundcloud-tocausan.png",
+            "user": "tocausan"
+        },
+        {
+            "name": "medium",
+            "mdi_icon": "mdi-medium",
+            "link": "https://medium.com/@tocausan",
+            "qr_code": "assets/qr/medium-tocausan.png",
+            "user": "tocausan"
+        },
+        {
+            "name": "github",
+            "mdi_icon": "mdi-github-circle",
+            "link": "https://github.com/tocausan",
+            "qr_code": "assets/qr/github-tocausan.png",
+            "user": "tocausan"
+        },
+        {
+            "name": "codepen",
+            "mdi_icon": "mdi-codepen",
+            "link": "http://codepen.io/tocausan",
+            "qr_code": "assets/qr/codepen-tocausan.png",
+            "user": "tocausan"
+        },
+        {
+            "name": "linkedin",
+            "mdi_icon": "mdi-linkedin",
+            "link": "https://www.linkedin.com/in/tomascaufriez",
+            "qr_code": "assets/qr/linkedin-tocausan.png",
+            "user": "tomascaufriez"
+        },
+        {
+            "name": "gmail",
+            "mdi_icon": "mdi-gmail",
+            "mail": "tocausan@gmail.com",
+            "user": "tocausan"
+        },
+        {
+            "name": "wechat",
+            "mdi_icon": "mdi-wechat",
+            "link": "",
+            "qr_code": "assets/qr/wechat-tocausan.png",
+            "user": "tocausan"
+        }
+    ]
+}

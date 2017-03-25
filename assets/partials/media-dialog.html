@@ -1,0 +1,27 @@
+<md-dialog aria-label="{{item.name}}-{{item.user}}" layout="column" layout-align="center center">
+    <md-content>
+        <!-- link and QR code -->
+        <div ng-if="item.link || item.qr_code">
+            <a target="_blank" href="{{item.link}}">
+                <md-button md-autofocus flex class="transparent">
+                    <div>@{{item.user}}</div>
+                    <img alt="{{item.user}}-{item.name}}-qr-code" src="{{item.qr_code}}" width="200px">
+                </md-button>
+            </a>
+        </div>
+
+        <!-- mail -->
+        <div ng-if="item.mail">
+            <a target="_blank" href="mailto:{{item.mail}}">
+                <md-button md-autofocus flex class="transparent" style="width: 200px; height: 200px;">
+                    <div>{{item.mail}}</div>
+                </md-button>
+            </a>
+        </div>
+    </md-content>
+
+    <md-button ng-click="hide()">
+        close
+    </md-button>
+
+</md-dialog>

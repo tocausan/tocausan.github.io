@@ -1,0 +1,17 @@
+<!-- media panel -->
+<md-content id="media" layout-padding class="md-padding" md-rows-sm="1" md-colors="{background: 'transparent'}" ng-controller="mediaCtrl">
+    <md-grid-list layout="row" layout-lg="row" layout-align="center center" md-cols="10" md-row-height="2:1" md-gutter="0px">
+        <!-- media item -->
+        <md-grid-tile md-rowspan="3" md-rowspan-gt-sm="1" md-colspan="2" md-colspan-gt-sm="1" ng-repeat="item in media">
+            <!-- button -->
+            <md-button class="transparent" ng-click="showDialog($event, item)" style="width: 100%; height: 100%;">
+                <!-- icon -->
+                <i class="mdi mdi-36px mdi-dark {{item.mdi_icon}}"></i>
+                <!-- tooltip -->
+                <md-tooltip md-direction="bottom">
+                    {{item.name | capitalize}}
+                </md-tooltip>
+            </md-button>
+        </md-grid-tile>
+    </md-grid-list>
+</md-content>

@@ -1,11 +1,28 @@
+/**
+ * angular
+ * - module initialization
+ * main controller
+ */
+
 'use strict';
 
 angular.module('app', [
-    'social',
-    'cv',
-    'tab'
+    'ngAnimate',
+    'ngAria',
+    'ngMaterial',
+    'filters',
+    'media',
+    'show'
 ])
 
-    .controller('mainCtrl', function($scope){
+.controller('mainCtrl', function($scope) {
 
-    });
+    $scope.sections = [{
+        name: 'media',
+        url: 'assets/partials/media.html'
+    }, {
+        name: 'show',
+        url: 'assets/partials/show.html'
+    }];
+
+});

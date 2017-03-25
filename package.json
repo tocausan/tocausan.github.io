@@ -1,0 +1,23 @@
+{
+  "name": "tocausan.github.io",
+  "version": "1.0.0",
+  "description": "[![Status](https://img.shields.io/badge/Status-On_air-green.svg)](http://tocausan.github.io) [![SEO](https://img.shields.io/badge/SEO-Optimized-green.svg)](https://www.google.be/search?client=safari&rls=en&q=tocausan&ie=UTF-8&oe=UTF-8&gfe_rd=cr&ei=zISfWJqwAbLS8AfP8Z9Q#q=tocausan+github)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tocausan/tocausan.github.io.git"
+  },
+  "author": "tocausan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tocausan/tocausan.github.io/issues"
+  },
+  "homepage": "https://github.com/tocausan/tocausan.github.io#readme",
+  "dependencies": {
+    "connect": "^3.6.0",
+    "serve-static": "^1.12.1"
+  }
+}

@@ -1,69 +1,53 @@
-.page-content{
-    display: block;
+/* dialog */
+
+.dialog-button {
+    width: 100%;
+}
+
+.media-md-panel {
+    min-height: 200px;
+}
+
+.media-dialog {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 13px 19px 2px rgba(0, 0, 0, 0.14), 0 5px 24px 4px rgba(0, 0, 0, 0.12);
+    width: 500px;
+}
+
+.media-dialog-content {
+    padding: 0 15px;
+    width: 100%;
+}
+
+.media-dialog-content img {
+    height: 100px;
     margin: auto;
-    text-align: center;
 }
 
-.card-container{
-    padding: 2%;
-}
-.demo-card-wide.mdl-card {
-    display: block;
-    float: left;
-}
-.demo-card-wide .mdl-card__title {
-    color: #fff;
-    height: 176px;
-}
-.demo-card-wide > .mdl-card__menu {
-    color: #fff;
+.media-menu-example {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 13px 19px 2px rgba(0, 0, 0, 0.14), 0 5px 24px 4px rgba(0, 0, 0, 0.12);
+    width: 256px;
 }
 
-.demo-card-wide > .mdl-card__supporting-text.description{
-    height: 35px;
-    overflow: scroll;
+.media-menu-item {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 48px;
+    padding: 0 16px;
+    position: relative;
+    transition: background 0.15s linear;
+    width: auto;
 }
 
+.media-menu-item:hover,
+.media-menu-item:focus {
+    background-color: rgb(238, 238, 238);
+}
 
-.card-coding .mdl-card__title{
-    background: url('../img/coding.small.jpg') center / cover;
-}
-.card-coding-2 .mdl-card__title{
-    background: url('../img/coding-2.small.jpg') center / cover;
-}
-.card-photography .mdl-card__title{
-    background: url('../img/photography.small.jpg') center / cover;
-}
-.card-photography-2 .mdl-card__title{
-    background: url('../img/photography-2.small.jpg') center / cover;
-}
-.card-photography-3 .mdl-card__title{
-    background: url('../img/photography-3.small.jpg') center / cover;
-}
-.card-design .mdl-card__title{
-    background: url('../img/design.small.jpg') center / cover;
-}
-.card-inspiration .mdl-card__title{
-    background: url('../img/inspiration.small.jpg') center / cover;
-}
-.card-inspiration-2 .mdl-card__title{
-    background: url('../img/inspiration-2.small.jpg') center / cover;
-}
-.card-social .mdl-card__title{
-    background: url('../img/social.small.jpg') center / cover;
-}
-.card-social-2 .mdl-card__title{
-    background: url('../img/social-2.small.jpg') center / cover;
-}
-.card-social-3 .mdl-card__title{
-    background: url('../img/social-3.small.jpg') center / cover;
-}
-.card-social-4 .mdl-card__title{
-    background: url('../img/social-4.small.jpg') center / cover;
-}
-.card-blog .mdl-card__title{
-    background: url('../img/blog.small.jpg') center / cover;
-}
-.card-mail .mdl-card__title{
-    background: url('../img/mail.small.jpg') center / cover;
+.media-menu-item.selected {
+    color: rgb(16, 108, 200);
 }
