@@ -1,0 +1,10 @@
+<!-- media panel -->
+<div id="skill" class="md-padding md-whiteframe-5dp" md-colors="{background: ''}" ng-controller="skillCtrl">
+    <md-grid-list layout="row" layout-lg="row" layout-align="center center" md-cols="12" md-row-height="1:.5" md-gutter="0px">
+        <!-- language item -->
+        <md-grid-tile layout-padding md-rowspan="3" md-rowspan-gt-sm="1" md-colspan="3" md-colspan-gt-sm="1" ng-repeat="language in languages">
+            {{language.name}} <br>{{language.level}}
+
+        </md-grid-tile>
+    </md-grid-list>
+</div>

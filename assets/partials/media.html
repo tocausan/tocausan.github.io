@@ -1,6 +1,6 @@
 <!-- media panel -->
-<div id="media" layout-padding class="md-padding" md-rows-sm="1" md-colors="{background: 'transparent'}" ng-controller="mediaCtrl">
-    <md-grid-list layout="row" layout-lg="row" layout-align="center center" md-cols="10" md-row-height-xs="1:.5" md-row-height-sm="1:.4" md-row-height-gt-sm="1:.4" md-gutter="0px">
+<div id="media" layout-padding class="md-padding " md-rows-sm="1" ng-controller="mediaCtrl">
+    <md-grid-list layout="row" layout-lg="row" layout-align="center center" md-cols="10" md-row-height="1:.6" md-gutter="0px">
         <!-- media item -->
         <md-grid-tile layout-padding md-rowspan="3" md-rowspan-gt-sm="1" md-colspan="2" md-colspan-gt-sm="1" ng-repeat="item in media">
             <!-- button -->
@@ -8,7 +8,7 @@
                 <!-- icon -->
                 <i class="mdi mdi-36px mdi-dark {{item.mdi_icon}}"></i>
                 <!-- tooltip -->
-                <md-tooltip md-direction="bottom">
+                <md-tooltip md-direction="top">
                     {{item.name | capitalize}}
                 </md-tooltip>
             </md-button>

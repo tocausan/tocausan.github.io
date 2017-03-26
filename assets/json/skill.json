@@ -1,267 +1,258 @@
 {
-  "languages": [
-    {
-      "name": "French",
-      "level": "Mother Tongue",
-      "writing": "10",
-      "reading": "10",
-      "speaking": "10"
-    },
-    {
-      "name": "English",
-      "level": "Fluent",
-      "writing": "9",
-      "reading": "9",
-      "speaking": "8"
-    },
-    {
-      "name": "Spanish",
-      "level": "Elementary",
-      "writing": "4",
-      "reading": "6",
-      "speaking": "4"
-    },
-    {
-      "name": "Dutch",
-      "level": "Elementary",
-      "writing": "4",
-      "reading": "4",
-      "speaking": "4"
-    },
-    {
-      "name": "Mandarin",
-      "level": "Beginner",
-      "writing": "1",
-      "reading": "2",
-      "speaking": "3"
-    },
-  ],
+    "languages": [{
+            "name": "French",
+            "level": "Mother Tongue",
+            "writing": "10",
+            "reading": "10",
+            "speaking": "10"
+        },
+        {
+            "name": "English",
+            "level": "Fluent",
+            "writing": "9",
+            "reading": "9",
+            "speaking": "8"
+        },
+        {
+            "name": "Spanish",
+            "level": "Elementary",
+            "writing": "4",
+            "reading": "6",
+            "speaking": "4"
+        },
+        {
+            "name": "Mandarin",
+            "level": "Beginner",
+            "writing": "1",
+            "reading": "2",
+            "speaking": "3"
+        }
+    ],
 
-  "skills": [
-    {
-      "type": "development",
-      "name": "R",
-      "framework": "",
-      "experience": "Machine Learning",
-      "theory": "6",
-      "practice": "4"
-    },
-    {
-      "type": "development",
-      "name": "C++",
-      "framework": "",
-      "experience": "University",
-      "theory": "56",
-      "practice": "4"
-    },
-    {
-      "type": "development",
-      "name": "Objective-C",
-      "framework": "iOS",
-      "experience": "University",
-      "theory": "5",
-      "practice": "4"
-    },
-    {
-      "type": "development",
-      "name": "Java",
-      "experience": "University",
-      "framework": "Android, EE",
-      "theory": "5",
-      "practice": "4"
-    },
-    {
-      "type": "development",
-      "name": "C#",
-      "experience": "University",
-      "framework": "Windows Phone",
-      "theory": "5",
-      "practice": "4"
-    },
-    {
-      "type": "development",
-      "name": "PL-SQL",
-      "experience": "University",
-      "framework": "Oracle",
-      "theory": "5",
-      "practice": "3"
-    },
-    {
-      "type": "development",
-      "name": "PHP",
-      "experience": "University",
-      "framework": "Symphony, Laravel",
-      "theory": "8",
-      "practice": "8"
-    },
-    {
-      "type": "development",
-      "name": "Python",
-      "experience": "Machine Learning",
-      "framework": "",
-      "theory": "6",
-      "practice": "5"
-    },
-    {
-      "type": "development",
-      "name": "Javascript",
-      "experience": "Web",
-      "framework": "NodeJS, ThreeJS, Angular, D3, jQuery, ExpressJS",
-      "theory": "8",
-      "practice": "8"
-    },
-    {
-      "type": "development",
-      "name": "Typescript",
-      "experience": "Web",
-      "framework": "Angular 2",
-      "theory": "5",
-      "practice": "3"
-    },
-    {
-      "type": "development",
-      "name": "HTML",
-      "experience": "Web",
-      "framework": "Foundation, Bootstrap, Material Design Lite",
-      "theory": "9",
-      "practice": "9"
-    },
-    {
-      "type": "development",
-      "name": "CSS",
-      "experience": "Web",
-      "framework": "",
-      "theory": "9",
-      "practice": "9"
-    },
-    {
-      "type": "development",
-      "name": "JSON",
-      "experience": "Web",
-      "framework": "",
-      "theory": "9",
-      "practice": "9"
-    },
-    {
-      "type": "development",
-      "name": "XML",
-      "experience": "Web",
-      "framework": "",
-      "theory": "9",
-      "practice": "9"
-    },
-    {
-      "type": "development",
-      "name": "SVG",
-      "experience": "Web, Design",
-      "framework": "",
-      "theory": "9",
-      "practice": "9"
-    },
-    {
-      "type": "development",
-      "name": "Oracle",
-      "experience": "University",
-      "framework": "",
-      "theory": "7",
-      "practice": "5"
-    },
-    {
-      "type": "development",
-      "name": "mySQL",
-      "experience": "Web",
-      "framework": "",
-      "theory": "8",
-      "practice": "8"
-    },
-    {
-      "type": "development",
-      "name": "SQLite",
-      "experience": "Web",
-      "framework": "",
-      "theory": "8",
-      "practice": "8"
-    },
-    {
-      "type": "development",
-      "name": "MongoDB",
-      "experience": "Web",
-      "framework": "",
-      "theory": "8",
-      "practice": "7"
-    },
-    {
-      "type": "development",
-      "name": "Git",
-      "experience": "Web",
-      "framework": "",
-      "theory": "7",
-      "practice": "7"
-    },
-    {
-      "type": "development",
-      "name": "Github",
-      "experience": "Web",
-      "framework": "",
-      "theory": "7",
-      "practice": "7"
-    },
-    {
-      "type": "sysadmin",
-      "name": "Windows Server",
-      "experience": "University",
-      "framework": "Windows Server 2012",
-      "theory": "7",
-      "practice": "7"
-    },
-    {
-      "type": "sysadmin",
-      "name": "Cisco",
-      "experience": "University",
-      "framework": "",
-      "theory": "6",
-      "practice": "2"
-    },
+    "skills": [{
+            "type": "development",
+            "name": "R",
+            "framework": "",
+            "experience": "Machine Learning",
+            "theory": "6",
+            "practice": "4"
+        },
+        {
+            "type": "development",
+            "name": "C++",
+            "framework": "",
+            "experience": "University",
+            "theory": "56",
+            "practice": "4"
+        },
+        {
+            "type": "development",
+            "name": "Objective-C",
+            "framework": "iOS",
+            "experience": "University",
+            "theory": "5",
+            "practice": "4"
+        },
+        {
+            "type": "development",
+            "name": "Java",
+            "experience": "University",
+            "framework": "Android, EE",
+            "theory": "5",
+            "practice": "4"
+        },
+        {
+            "type": "development",
+            "name": "C#",
+            "experience": "University",
+            "framework": "Windows Phone",
+            "theory": "5",
+            "practice": "4"
+        },
+        {
+            "type": "development",
+            "name": "PL-SQL",
+            "experience": "University",
+            "framework": "Oracle",
+            "theory": "5",
+            "practice": "3"
+        },
+        {
+            "type": "development",
+            "name": "PHP",
+            "experience": "University",
+            "framework": "Symphony, Laravel",
+            "theory": "8",
+            "practice": "8"
+        },
+        {
+            "type": "development",
+            "name": "Python",
+            "experience": "Machine Learning",
+            "framework": "",
+            "theory": "6",
+            "practice": "5"
+        },
+        {
+            "type": "development",
+            "name": "Javascript",
+            "experience": "Web",
+            "framework": "NodeJS, ThreeJS, Angular, D3, jQuery, ExpressJS",
+            "theory": "8",
+            "practice": "8"
+        },
+        {
+            "type": "development",
+            "name": "Typescript",
+            "experience": "Web",
+            "framework": "Angular 2",
+            "theory": "5",
+            "practice": "3"
+        },
+        {
+            "type": "development",
+            "name": "HTML",
+            "experience": "Web",
+            "framework": "Foundation, Bootstrap, Material Design Lite",
+            "theory": "9",
+            "practice": "9"
+        },
+        {
+            "type": "development",
+            "name": "CSS",
+            "experience": "Web",
+            "framework": "",
+            "theory": "9",
+            "practice": "9"
+        },
+        {
+            "type": "development",
+            "name": "JSON",
+            "experience": "Web",
+            "framework": "",
+            "theory": "9",
+            "practice": "9"
+        },
+        {
+            "type": "development",
+            "name": "XML",
+            "experience": "Web",
+            "framework": "",
+            "theory": "9",
+            "practice": "9"
+        },
+        {
+            "type": "development",
+            "name": "SVG",
+            "experience": "Web, Design",
+            "framework": "",
+            "theory": "9",
+            "practice": "9"
+        },
+        {
+            "type": "development",
+            "name": "Oracle",
+            "experience": "University",
+            "framework": "",
+            "theory": "7",
+            "practice": "5"
+        },
+        {
+            "type": "development",
+            "name": "mySQL",
+            "experience": "Web",
+            "framework": "",
+            "theory": "8",
+            "practice": "8"
+        },
+        {
+            "type": "development",
+            "name": "SQLite",
+            "experience": "Web",
+            "framework": "",
+            "theory": "8",
+            "practice": "8"
+        },
+        {
+            "type": "development",
+            "name": "MongoDB",
+            "experience": "Web",
+            "framework": "",
+            "theory": "8",
+            "practice": "7"
+        },
+        {
+            "type": "development",
+            "name": "Git",
+            "experience": "Web",
+            "framework": "",
+            "theory": "7",
+            "practice": "7"
+        },
+        {
+            "type": "development",
+            "name": "Github",
+            "experience": "Web",
+            "framework": "",
+            "theory": "7",
+            "practice": "7"
+        },
+        {
+            "type": "sysadmin",
+            "name": "Windows Server",
+            "experience": "University",
+            "framework": "Windows Server 2012",
+            "theory": "7",
+            "practice": "7"
+        },
+        {
+            "type": "sysadmin",
+            "name": "Cisco",
+            "experience": "University",
+            "framework": "",
+            "theory": "6",
+            "practice": "2"
+        },
 
-    {
-      "type": "design",
-      "name": "Adobe",
-      "experience": "Photography, Design",
-      "framework": "Ps, Ai, Id, Lr, Pr, Ae, Br",
-      "theory": "8",
-      "practice": "8"
-    },
-    {
-      "type": "design",
-      "name": "Blender",
-      "experience": "CAD",
-      "framework": "",
-      "theory": "7",
-      "practice": "6"
-    },
-    {
-      "type": "design",
-      "name": "Sketchup",
-      "experience": "CAD",
-      "framework": "Maxwell Render",
-      "theory": "8",
-      "practice": "8"
-    },
-    {
-      "type": "design",
-      "name": "Makerbot",
-      "experience": "3D Print",
-      "framework": "Replicator",
-      "theory": "8",
-      "practice": "8"
-    },
-    {
-      "type": "office",
-      "name": "Offices",
-      "experience": "Paperwork",
-      "framework": "W, P, X",
-      "theory": "7",
-      "practice": "7"
-    },
-  ]
+        {
+            "type": "design",
+            "name": "Adobe",
+            "experience": "Photography, Design",
+            "framework": "Ps, Ai, Id, Lr, Pr, Ae, Br",
+            "theory": "8",
+            "practice": "8"
+        },
+        {
+            "type": "design",
+            "name": "Blender",
+            "experience": "CAD",
+            "framework": "",
+            "theory": "7",
+            "practice": "6"
+        },
+        {
+            "type": "design",
+            "name": "Sketchup",
+            "experience": "CAD",
+            "framework": "Maxwell Render",
+            "theory": "8",
+            "practice": "8"
+        },
+        {
+            "type": "design",
+            "name": "Makerbot",
+            "experience": "3D Print",
+            "framework": "Replicator",
+            "theory": "8",
+            "practice": "8"
+        },
+        {
+            "type": "office",
+            "name": "Offices",
+            "experience": "Paperwork",
+            "framework": "W, P, X",
+            "theory": "7",
+            "practice": "7"
+        }
+    ]
 }

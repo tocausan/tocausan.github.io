@@ -12,17 +12,24 @@ angular.module('app', [
     'ngMaterial',
     'filters',
     'media',
-    'show'
+    'show',
+    'skill'
 ])
 
 .controller('mainCtrl', function($scope) {
 
     $scope.sections = [{
-        name: 'show',
-        url: 'assets/partials/show.html'
-    }, {
-        name: 'media',
-        url: 'assets/partials/media.html'
-    }];
+            name: 'show',
+            url: 'assets/partials/show.html'
+        },
+        /*{
+               name: 'skill',
+               url: 'assets/partials/skill.html'
+           },*/
+        {
+            name: 'media',
+            url: 'assets/partials/media.html'
+        }
+    ];
 
 });

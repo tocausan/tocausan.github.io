@@ -30,8 +30,9 @@
     <!-- app script -->
     <script src="assets/js/app.js"></script>
     <script src="assets/js/filters.js"></script>
-    <script src="assets/js/media.controllers.js"></script>
     <script src="assets/js/show.controllers.js"></script>
+    <script src="assets/js/media.controllers.js"></script>
+    <script src="assets/js/skill.controllers.js"></script>
     <!-- app style -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- google analytics -->
@@ -59,6 +60,13 @@
 
     <!-- sections -->
     <section ng-include="section.url" ng-repeat="section in sections"></section>
+
+    <!-- footer -->
+    <footer style="position: fixed; bottom: 0; text-align: center; width: 100%">
+        <div layout="row" layout-align="center center">
+            <small>2017 @ tocausan</small>
+        </div>
+    </footer>
 
     <!-- github ribbon -->
     <a href="https://github.com/tocausan/tocausan.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67"
