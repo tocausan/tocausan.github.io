@@ -1,6 +1,7 @@
 # [tocausan.github.io](http://tocausan.github.io)
-[![Status](https://img.shields.io/badge/Status-On_air-green.svg)](http://tocausan.github.io)
-[![SEO](https://img.shields.io/badge/SEO-Optimized-green.svg)](https://www.google.be/search?client=safari&rls=en&q=tocausan&ie=UTF-8&oe=UTF-8&gfe_rd=cr&ei=zISfWJqwAbLS8AfP8Z9Q#q=tocausan+github)
+[![Status](https://img.shields.io/badge/Status-On_air-green.svg?style=flat)](http://tocausan.github.io)
+[![Version](https://img.shields.io/badge/Version-2.0.0-pink.svg?style=flat)](http://tocausan.github.io)
+[![SEO](https://img.shields.io/badge/SEO-Optimized-blue.svg?style=flat)](https://www.google.be/search?client=safari&rls=en&q=tocausan&ie=UTF-8&oe=UTF-8&gfe_rd=cr&ei=zISfWJqwAbLS8AfP8Z9Q#q=tocausan+github)
 
 
 ## Description
@@ -36,6 +37,11 @@ tocausan github hosted showcase.
 -- bower_components/    Bower components folder
 ```
 
+### Source
+- [Angular](https://angular.io)
+- [Angular Material](https://material.angularjs.org/latest/)
+- [Materieal Design Icon](https://materialdesignicons.com)
+- [QR Code Generator](http://goqr.me)
 
 
 
