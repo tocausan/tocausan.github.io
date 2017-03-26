@@ -12,7 +12,7 @@ tocausan github hosted showcase.
 - [500px](https://500px.com/tocausan)
 - [Behance](https://www.behance.net/tocausan)
 - [Pinterest](https://jp.pinterest.com/tocausan)
-- [Sounclouds](https://soundcloud.com/tomas-caufriez-sanchez)
+- [Sounclouds](https://soundcloud.com/tocausan)
 - [Medium](https://medium.com/@tocausan)
 - [Linkedin](https://www.linkedin.com/in/tomascaufriez)
 - [Facebook](https://www.facebook.com/coucoucaptain)

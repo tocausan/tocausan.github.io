@@ -18,11 +18,11 @@ angular.module('app', [
 .controller('mainCtrl', function($scope) {
 
     $scope.sections = [{
-        name: 'media',
-        url: 'assets/partials/media.html'
-    }, {
         name: 'show',
         url: 'assets/partials/show.html'
+    }, {
+        name: 'media',
+        url: 'assets/partials/media.html'
     }];
 
 });
