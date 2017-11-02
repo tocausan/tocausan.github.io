@@ -1,0 +1,4 @@
+body {
+  background-color: red; }
+  body > div {
+    background-color: yellow; }

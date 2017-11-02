@@ -17,7 +17,14 @@
   },
   "homepage": "https://github.com/tocausan/tocausan.github.io#readme",
   "dependencies": {
+    "browser-sync": "^2.18.13",
     "connect": "^3.6.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2",
     "serve-static": "^1.12.1"
   }
 }
