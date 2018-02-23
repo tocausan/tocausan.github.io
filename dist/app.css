@@ -80,90 +80,6 @@ body {
         .contact-section .contact-component .medias .media:hover .account {
           opacity: 1; }
 
-.cube-inception-component {
-  width: 100%;
-  height: 100%;
-  z-index: 9;
-  position: absolute;
-  transition: .5s;
-  overflow: hidden; }
-  .cube-inception-component .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; }
-    .cube-inception-component .container .cube-0,
-    .cube-inception-component .container .cube-1 {
-      position: absolute;
-      animation-timing-function: linear;
-      transform-style: preserve-3d; }
-      .cube-inception-component .container .cube-0 .face,
-      .cube-inception-component .container .cube-1 .face {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        line-height: 100px;
-        text-align: center;
-        font-size: 80px;
-        opacity: 0.3;
-        border: 1px solid #ff6961; }
-    .cube-inception-component .container .cube-0 {
-      width: 50px;
-      height: 50px;
-      animation: rotation-0 10s linear infinite; }
-      .cube-inception-component .container .cube-0 .face {
-        width: 50px;
-        height: 50px; }
-      .cube-inception-component .container .cube-0 .face-1 {
-        transform: translateZ(calc(50px / 2)); }
-      .cube-inception-component .container .cube-0 .face-2 {
-        transform: translateZ(0px) translateX(0px) translateX(calc(50px / 2)) rotateY(90deg); }
-      .cube-inception-component .container .cube-0 .face-3 {
-        transform: translateZ(0px) translateX(0px) translateX(calc(-50px / 2)) rotateY(-90deg); }
-      .cube-inception-component .container .cube-0 .face-4 {
-        transform: translateZ(0px) translateY(calc(50px / 2)) rotateX(calc(-90deg)); }
-      .cube-inception-component .container .cube-0 .face-5 {
-        transform: translateZ(0px) translateY(calc(-50px / 2)) rotateX(90deg); }
-      .cube-inception-component .container .cube-0 .face-6 {
-        transform: translateZ(calc(-50px / 2)); }
-    .cube-inception-component .container .cube-1 {
-      width: 100px;
-      height: 100px;
-      animation: rotation-1 10s linear infinite; }
-      .cube-inception-component .container .cube-1 .face {
-        width: 100px;
-        height: 100px; }
-      .cube-inception-component .container .cube-1 .face-1 {
-        transform: translateZ(calc(100px / 2)); }
-      .cube-inception-component .container .cube-1 .face-2 {
-        transform: translateZ(0px) translateX(0px) translateX(calc(100px / 2)) rotateY(90deg); }
-      .cube-inception-component .container .cube-1 .face-3 {
-        transform: translateZ(0px) translateX(0px) translateX(calc(-100px / 2)) rotateY(-90deg); }
-      .cube-inception-component .container .cube-1 .face-4 {
-        transform: translateZ(0px) translateY(calc(100px / 2)) rotateX(calc(-90deg)); }
-      .cube-inception-component .container .cube-1 .face-5 {
-        transform: translateZ(0px) translateY(calc(-100px / 2)) rotateX(90deg); }
-      .cube-inception-component .container .cube-1 .face-6 {
-        transform: translateZ(calc(-100px / 2)); }
-
-@keyframes rotation-0 {
-  from {
-    transform-origin: 50% 50%;
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
-  to {
-    transform-origin: 50% 50%;
-    transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg); } }
-
-@keyframes rotation-1 {
-  from {
-    transform-origin: 50% 50%;
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
-  to {
-    transform-origin: 50% 50%;
-    transform: rotateX(360deg) rotateY(0deg) rotateZ(360deg); } }
-
 .footer-section {
   display: flex;
   justify-content: center;
@@ -253,6 +169,8 @@ body {
       opacity: 0; }
     .home-section.top .back {
       opacity: 1; }
+    .home-section.top .direction.right, .home-section.top .direction.bottom, .home-section.top .direction.left {
+      display: none; }
   .home-section.right {
     transform: translateX(120%); }
   .home-section.bottom {
@@ -270,3 +188,87 @@ body {
   100% {
     transform: translateY(-20%);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); } }
+
+.cube-inception-component {
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  position: absolute;
+  transition: .5s;
+  overflow: hidden; }
+  .cube-inception-component .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    .cube-inception-component .container .cube-0,
+    .cube-inception-component .container .cube-1 {
+      position: absolute;
+      animation-timing-function: linear;
+      transform-style: preserve-3d; }
+      .cube-inception-component .container .cube-0 .face,
+      .cube-inception-component .container .cube-1 .face {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        line-height: 100px;
+        text-align: center;
+        font-size: 80px;
+        opacity: 0.3;
+        border: 1px solid #ff6961; }
+    .cube-inception-component .container .cube-0 {
+      width: 50px;
+      height: 50px;
+      animation: rotation-0 10s linear infinite; }
+      .cube-inception-component .container .cube-0 .face {
+        width: 50px;
+        height: 50px; }
+      .cube-inception-component .container .cube-0 .face-1 {
+        transform: translateZ(calc(50px / 2)); }
+      .cube-inception-component .container .cube-0 .face-2 {
+        transform: translateZ(0px) translateX(0px) translateX(calc(50px / 2)) rotateY(90deg); }
+      .cube-inception-component .container .cube-0 .face-3 {
+        transform: translateZ(0px) translateX(0px) translateX(calc(-50px / 2)) rotateY(-90deg); }
+      .cube-inception-component .container .cube-0 .face-4 {
+        transform: translateZ(0px) translateY(calc(50px / 2)) rotateX(calc(-90deg)); }
+      .cube-inception-component .container .cube-0 .face-5 {
+        transform: translateZ(0px) translateY(calc(-50px / 2)) rotateX(90deg); }
+      .cube-inception-component .container .cube-0 .face-6 {
+        transform: translateZ(calc(-50px / 2)); }
+    .cube-inception-component .container .cube-1 {
+      width: 100px;
+      height: 100px;
+      animation: rotation-1 10s linear infinite; }
+      .cube-inception-component .container .cube-1 .face {
+        width: 100px;
+        height: 100px; }
+      .cube-inception-component .container .cube-1 .face-1 {
+        transform: translateZ(calc(100px / 2)); }
+      .cube-inception-component .container .cube-1 .face-2 {
+        transform: translateZ(0px) translateX(0px) translateX(calc(100px / 2)) rotateY(90deg); }
+      .cube-inception-component .container .cube-1 .face-3 {
+        transform: translateZ(0px) translateX(0px) translateX(calc(-100px / 2)) rotateY(-90deg); }
+      .cube-inception-component .container .cube-1 .face-4 {
+        transform: translateZ(0px) translateY(calc(100px / 2)) rotateX(calc(-90deg)); }
+      .cube-inception-component .container .cube-1 .face-5 {
+        transform: translateZ(0px) translateY(calc(-100px / 2)) rotateX(90deg); }
+      .cube-inception-component .container .cube-1 .face-6 {
+        transform: translateZ(calc(-100px / 2)); }
+
+@keyframes rotation-0 {
+  from {
+    transform-origin: 50% 50%;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  to {
+    transform-origin: 50% 50%;
+    transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg); } }
+
+@keyframes rotation-1 {
+  from {
+    transform-origin: 50% 50%;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  to {
+    transform-origin: 50% 50%;
+    transform: rotateX(360deg) rotateY(0deg) rotateZ(360deg); } }

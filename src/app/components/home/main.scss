@@ -99,10 +99,18 @@
     .front {
       opacity: 0;
     }
-
     .back {
       opacity: 1;
     }
+    .direction {
+      &.right,
+      &.bottom,
+      &.left {
+        display: none;
+        //transform: translateX(350px);
+      }
+    }
+
   }
   &.right {
     transform: translateX(120%);
