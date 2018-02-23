@@ -19,6 +19,9 @@ body {
   html :focus,
   body :focus {
     outline: 0; }
+  html ::-webkit-scrollbar,
+  body ::-webkit-scrollbar {
+    display: none; }
 
 .contact-section {
   width: 50%;
@@ -38,8 +41,8 @@ body {
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2) inset; }
     .contact-section .contact-component .medias {
       display: flex;
-      justify-content: stretch;
-      align-items: stretch;
+      justify-content: space-around;
+      align-items: center;
       flex-wrap: wrap;
       width: 80%;
       max-height: 100%;
@@ -75,6 +78,19 @@ body {
         .contact-section .contact-component .medias .media:hover .name,
         .contact-section .contact-component .medias .media:hover .account {
           opacity: 1; }
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  .footer-section .footer-component {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    position: fixed;
+    bottom: 0; }
 
 .home-section {
   display: flex;
@@ -132,16 +148,3 @@ body {
   100% {
     transform: translateY(-20%);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); } }
-
-.footer-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%; }
-  .footer-section .footer-component {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    position: fixed;
-    bottom: 0; }
