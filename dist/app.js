@@ -211,13 +211,6 @@ function DialogCtrl($scope, $mdDialog, item) {
 };
 'use strict';
 
-angular.module('footer', [])
-    .controller('footerCtrl', function ($scope) {
-        $scope.name = 'tocausan';
-        $scope.year = (new Date()).getFullYear();
-    });
-'use strict';
-
 angular.module('home', [])
     .controller('homeCtrl', function ($scope) {
 
@@ -257,6 +250,13 @@ angular.module('home', [])
         $scope.cubeInception = partialsPath + 'cube-inception/main.html';
     });
 
+'use strict';
+
+angular.module('footer', [])
+    .controller('footerCtrl', function ($scope) {
+        $scope.name = 'tocausan';
+        $scope.year = (new Date()).getFullYear();
+    });
 'use strict';
 
 // init module
