@@ -1,0 +1,15 @@
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .footer-component {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+}

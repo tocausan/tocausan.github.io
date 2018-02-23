@@ -1,0 +1,9 @@
+<div class="contact-component" ng-controller="contactCtrl">
+    <div class="medias">
+        <div class="media" ng-repeat="media in medias">
+            <div class="name" ng-bind="media.name"></div>
+            <div class="icon {{media.icon}}" ng-click="goTo(media)"></div>
+            <div class="account" ng-bind="media.account"></div>
+        </div>
+    </div>
+</div>

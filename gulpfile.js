@@ -1,45 +1,41 @@
 var gulp = require('gulp');
 var minifyHtml = require("gulp-minify-html");
-var sass = require('gulp-sass');  
+var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
-var browserSync = require('browser-sync');  
+var browserSync = require('browser-sync');
 
-// MINIFY HTML
 gulp.task('minify-html', function () {
-    gulp.src('./Html/*.html') // path to your files
-    .pipe(minifyHtml())
-    .pipe(gulp.dest('path/to/destination'));
+    gulp.src('./src/**/*.html') // path to your files
+        .pipe(minifyHtml())
+        .pipe(gulp.dest('./dist/'));
 });
 
-// SASS TO CSS
-gulp.task('sass-to-css', function () {
-  return gulp.src('./src/scss/*.scss')
-    .pipe(sass.sync().on('error', sass.logError))
-    .pipe(gulp.dest('./dist/css'));
+gulp.task('sass', function () {
+    return gulp.src('./src/**/*.scss')
+        .pipe(concat('app.css'))
+        .pipe(sass.sync().on('error', sass.logError))
+        .pipe(gulp.dest('./dist'));
 });
 
-// CONCAT JS
-gulp.task('concat-js', function() {
-  return gulp.src('./src/js/*.js')
-    .pipe(concat('all.js'))
-    .pipe(gulp.dest('./dist/js'));
+gulp.task('concat-js', function () {
+    return gulp.src('./src/**/*.js')
+        .pipe(concat('app.js'))
+        .pipe(gulp.dest('./dist/'));
 });
 
-// UGLIFY JS
 gulp.task('uglify-js', function (cb) {
-  pump([
-        gulp.src('./dist/js/*.js'),
-        uglify(),
-        gulp.dest('./dist/js')
-    ],
-    cb
-  );
+    pump([
+            gulp.src('./dist/js/*.js'),
+            uglify(),
+            gulp.dest('./dist/js')
+        ],
+        cb
+    );
 });
 
-// BROWSER SYNC
-gulp.task('browser-sync', function() {  
+gulp.task('browser-sync', function () {
     browserSync.init(["dist/css/*.css", "dist/js/*.js"], {
         server: {
             baseDir: "./"
@@ -47,9 +43,14 @@ gulp.task('browser-sync', function() {
     });
 });
 
-// WATCH
-gulp.task('default', ['minify-html', 'sass-to-css', 'concat-js', 'uglify-js', 'browser-sync'], function () {  
-    gulp.watch("src/scss/*.scss", ['sass']);
+gulp.task('browser-sync-reload', function () {
+    browserSync.reload();
+});
+
+gulp.task('default', ['minify-html', 'sass', 'concat-js', 'uglify-js', 'browser-sync'], function () {
+    gulp.watch("src/**/*.js", ['concat-js', 'browser-sync-reload']);
+    gulp.watch("src/**/*.scss", ['sass', 'browser-sync-reload']);
+    gulp.watch("src/**/*.html", ['minify-html', 'browser-sync-reload']);
 });
 
 

@@ -1,72 +1,77 @@
 {
-    "media": [{
-            "name": "instagram",
-            "mdi_icon": "mdi-instagram",
-            "link": "https://instagram.com/tocausan",
-            "qr_code": "assets/qr/instagram-tocausan.png",
-            "user": "tocausan"
-        },
-        {
-            "name": "behance",
-            "mdi_icon": "mdi-behance",
-            "link": "https://www.behance.net/tocausan",
-            "qr_code": "assets/qr/behance-tocausan.png",
-            "user": "tocausan"
-        },
-        {
-            "name": "pinterest",
-            "mdi_icon": "mdi-pinterest",
-            "link": "https://jp.pinterest.com/tocausan",
-            "qr_code": "assets/qr/pinterest-tocausan.png",
-            "user": "tocausan"
-        },
-        {
-            "name": "soundcloud",
-            "mdi_icon": "mdi-soundcloud",
-            "link": "https://soundcloud.com/tocausan",
-            "qr_code": "assets/qr/soundcloud-tocausan.png",
-            "user": "tocausan"
-        },
-        {
-            "name": "medium",
-            "mdi_icon": "mdi-medium",
-            "link": "https://medium.com/@tocausan",
-            "qr_code": "assets/qr/medium-tocausan.png",
-            "user": "tocausan"
-        },
-        {
-            "name": "github",
-            "mdi_icon": "mdi-github-circle",
-            "link": "https://github.com/tocausan",
-            "qr_code": "assets/qr/github-tocausan.png",
-            "user": "tocausan"
-        },
-        {
-            "name": "codepen",
-            "mdi_icon": "mdi-codepen",
-            "link": "http://codepen.io/tocausan",
-            "qr_code": "assets/qr/codepen-tocausan.png",
-            "user": "tocausan"
-        },
-        {
-            "name": "linkedin",
-            "mdi_icon": "mdi-linkedin",
-            "link": "https://www.linkedin.com/in/tomascaufriez",
-            "qr_code": "assets/qr/linkedin-tocausan.png",
-            "user": "tomascaufriez"
-        },
-        {
-            "name": "gmail",
-            "mdi_icon": "mdi-gmail",
-            "mail": "tocausan@gmail.com",
-            "user": "tocausan"
-        },
-        {
-            "name": "wechat",
-            "mdi_icon": "mdi-wechat",
-            "link": "",
-            "qr_code": "assets/qr/wechat-tocausan.png",
-            "user": "tocausan"
-        }
-    ]
+  "medias": [
+    {
+      "name": "instagram",
+      "icon": "icon-instagram2",
+      "url": "https://www.instagram.com/tocausan/",
+      "account": "tocausan",
+      "qr": "",
+      "mail": ""
+    },
+    {
+      "name": "pinterest",
+      "icon": "icon-pinterest",
+      "url": "https://www.pinterest.jp/tocausan/",
+      "account": "tocausan",
+      "qr": "",
+      "mail": ""
+    },
+    {
+      "name": "behance",
+      "icon": "icon-behance",
+      "url": "https://www.behance.net/tocausan",
+      "account": "tocausan",
+      "qr": "",
+      "mail": ""
+    },
+    {
+      "name": "soundcloud",
+      "icon": "icon-soundcloud",
+      "url": "https://soundcloud.com/tocausan",
+      "account": "tocausan",
+      "qr": "",
+      "mail": ""
+    },
+    {
+      "name": "github",
+      "icon": "icon-github",
+      "url": "https://github.com/tocausan",
+      "account": "tocausan",
+      "qr": "",
+      "mail": ""
+    },
+    {
+      "name": "codepen",
+      "icon": "icon-codepen2",
+      "url": "https://codepen.io/tocausan/",
+      "account": "tocausan",
+      "qr": "",
+      "mail": ""
+    },
+    {
+      "name": "linkedin",
+      "icon": "icon-linkedin-square",
+      "url": "https://www.linkedin.com/in/tocausan/",
+      "account": "tocausan",
+      "qr": "",
+      "mail": ""
+    },
+    {
+      "name": "gmail",
+      "icon": "icon-google",
+      "url": "",
+      "account": "tocausan",
+      "qr": "",
+      "mail": "tocausan@gmail.com"
+    },
+    {
+      "name": "wechat",
+      "icon": "icon-wechat",
+      "url": "",
+      "account": "tocausan",
+      "qr": "assets/images/qr/wechat-tocausan.png",
+      "mail": ""
+    }
+
+  ]
 }
