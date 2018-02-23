@@ -28,7 +28,6 @@ angular.module('contact', [])
             }
         };
 
-
         // show dialog
         $scope.showDialog = function (ev, item) {
             console.log(ev)

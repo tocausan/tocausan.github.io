@@ -3,80 +3,35 @@
 angular.module('home', [])
     .controller('homeCtrl', function ($scope) {
 
-/*
-        // get data
-        ($scope.getData = function () {
-            // get media data
-            var mediaFile = 'assets/json/media.json';
-            $scope.media = [];
-            // promise
-            new Promise(function (resolve, reject) {
-                // New XMLHttpRequest
-                var xhr = new XMLHttpRequest();
-                xhr.open('get', mediaFile, true);
-                xhr.responseType = 'json';
-                xhr.onload = function () {
-                    if (xhr.status == 200) {
-                        // Success
-                        resolve(xhr.response);
-                        // Set total pages
-                        $scope.$apply(function () {
-                            $scope.media = xhr.response.media;
-                        });
-                    } else {
-                        // Error
-                        reject(xhr.status);
-                    }
-                };
-                xhr.send();
-            });
-        })();
+        $scope.move = ($event, direction) => {
+            const directions = ['top', 'right', 'bottom', 'left'],
+                //element = $event.currentTarget;
+                element = angular.element(document.querySelector('.home-section'))[0];
 
+            direction = !element.classList.contains(directions[0]) &&
+            !element.classList.contains(directions[1]) &&
+            !element.classList.contains(directions[2]) &&
+            !element.classList.contains(directions[3]) ? direction : null;
 
-
-        // show dialog
-        $scope.showDialog = function (ev, item) {
-            console.log(ev)
-            $mdDialog.show({
-                controller: DialogCtrl,
-                templateUrl: 'assets/partials/media-dialog.html',
-                parent: angular.element(document.body),
-                targetEvent: ev,
-                clickOutsideToClose: true,
-                locals: {
-                    item: item
-                }
-
-            })
-                .then(function (answer) {
-                    $scope.status = 'You said the information was "' + answer + '".';
-                }, function () {
-                    $scope.status = 'You cancelled the dialog.';
-                });
+            switch (direction) {
+                case directions[0]:
+                    element.classList.add(directions[0]);
+                    break;
+                case directions[1]:
+                    element.classList.add(directions[1]);
+                    break;
+                case directions[2]:
+                    element.classList.add(directions[2]);
+                    break;
+                case directions[3]:
+                    element.classList.add(directions[3]);
+                    break;
+                default:
+                    element.classList.contains(directions[0]) ? element.classList.remove(directions[0]) : null;
+                    element.classList.contains(directions[1]) ? element.classList.remove(directions[1]) : null;
+                    element.classList.contains(directions[2]) ? element.classList.remove(directions[2]) : null;
+                    element.classList.contains(directions[3]) ? element.classList.remove(directions[3]) : null;
+                    break;
+            }
         };
-
-*/
     });
-
-/*
-// dialog controller
-function DialogCtrl($scope, $mdDialog, item) {
-    console.log(555)
-    $scope.item = item;
-
-    // hide dialog
-    $scope.hide = function () {
-        $mdDialog.hide();
-    };
-
-    // cancel dialog
-    $scope.cancel = function () {
-        $mdDialog.cancel();
-    };
-
-    // answer dialog
-    $scope.answer = function (answer) {
-        $mdDialog.hide(answer);
-    };
-};
-*/
