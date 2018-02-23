@@ -20,9 +20,7 @@
     overflow: hidden;
 
     .cube-0,
-    .cube-1,
-    .cube-2,
-    .cube-3 {
+    .cube-1 {
       position: absolute;
       animation-timing-function: linear;
       transform-style: preserve-3d;
@@ -35,7 +33,7 @@
         text-align: center;
         font-size: 80px;
         opacity: 0.3;
-        border: 1px solid crimson;
+        border: 1px solid floralwhite;
       }
     }
 
@@ -97,64 +95,6 @@
       }
     }
 
-    .cube-2 {
-      width: $size-2;
-      height: $size-2;
-      animation: rotation-2 10s linear infinite;
-
-      .face {
-        width: $size-2;
-        height: $size-2;
-      }
-      .face-1 {
-        transform: translateZ(calc(#{$size-2} / 2));
-      }
-      .face-2 {
-        transform: translateZ(-0px) translateX(0px) translateX(calc(#{$size-2} / 2)) rotateY(90deg);
-      }
-      .face-3 {
-        transform: translateZ(-0px) translateX(-0px) translateX(calc(-#{$size-2} / 2)) rotateY(-90deg);
-      }
-      .face-4 {
-        transform: translateZ(-0px) translateY(calc(#{$size-2} / 2)) rotateX(calc(-90deg));
-      }
-      .face-5 {
-        transform: translateZ(-0px) translateY(calc(-#{$size-2} / 2)) rotateX(90deg);
-      }
-      .face-6 {
-        transform: translateZ(calc(-#{$size-2} / 2));
-      }
-    }
-
-    .cube-3 {
-      width: $size-3;
-      height: $size-3;
-      animation: rotation-3 10s linear infinite;
-
-      .face {
-        width: $size-3;
-        height: $size-3;
-      }
-      .face-1 {
-        transform: translateZ(calc(#{$size-3} / 2));
-      }
-      .face-2 {
-        transform: translateZ(-0px) translateX(0px) translateX(calc(#{$size-3} / 2)) rotateY(90deg);
-      }
-      .face-3 {
-        transform: translateZ(-0px) translateX(-0px) translateX(calc(-#{$size-3} / 2)) rotateY(-90deg);
-      }
-      .face-4 {
-        transform: translateZ(-0px) translateY(calc(#{$size-3} / 2)) rotateX(calc(-90deg));
-      }
-      .face-5 {
-        transform: translateZ(-0px) translateY(calc(-#{$size-3} / 2)) rotateX(90deg);
-      }
-      .face-6 {
-        transform: translateZ(calc(-#{$size-3} / 2));
-      }
-    }
-
   }
 
   @keyframes rotation-0 {
@@ -175,26 +115,6 @@
     to {
       transform-origin: 50% 50%;
       transform: rotateX(360deg) rotateY(0deg) rotateZ(360deg)
-    }
-  }
-  @keyframes rotation-2 {
-    from {
-      transform-origin: 50% 50%;
-      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-    }
-    to {
-      transform-origin: 50% 50%;
-      transform: rotateX(360deg) rotateY(360deg) rotateZ(0deg)
-    }
-  }
-  @keyframes rotation-3 {
-    from {
-      transform-origin: 50% 50%;
-      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-    }
-    to {
-      transform-origin: 50% 50%;
-      transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg)
     }
   }
 

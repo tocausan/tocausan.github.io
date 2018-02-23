@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Sanchez');
 
-$playfair_display_font: 'Playfair Display', serif;
-$raleway_font: 'Raleway', sans-serif;
+$sanchez_font: 'Sanchez', serif;
+
 
 html,
 body{
@@ -13,7 +13,7 @@ body{
   width: 100%;
   height: 100%;
   background-color: white;
-  font-family: $playfair_display_font;
+  font-family: $sanchez_font;
   overflow: hidden;
 
   section{
