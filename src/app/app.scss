@@ -20,6 +20,10 @@ body{
     justify-content: center;
     align-items: center;
   }
+
+  :focus {
+    outline: 0;
+  }
 }
 
 
