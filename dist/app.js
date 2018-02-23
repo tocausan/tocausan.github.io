@@ -6,6 +6,9 @@ angular.module('app', [
     'filters',
     'services',
     'home',
+    'face0',
+    'face1',
+    'face2',
     'contact',
     'skills',
     'footer'
@@ -26,14 +29,6 @@ angular.module('app', [
                 url: partialsPath + section + '/main.html'
             })
         });
-    });
-'use strict';
-
-angular.module('filters', [])
-    .filter('capitalize', () => {
-        return (input) => {
-            return (!!input) ? input.charAt(0).toUpperCase() + input.substr(1).toLowerCase() : '';
-        }
     });
 'use strict';
 
@@ -63,8 +58,16 @@ angular.module('services', [])
 
 'use strict';
 
+angular.module('filters', [])
+    .filter('capitalize', () => {
+        return (input) => {
+            return (!!input) ? input.charAt(0).toUpperCase() + input.substr(1).toLowerCase() : '';
+        }
+    });
+'use strict';
+
 angular.module('contact', [])
-    .controller('contactCtrl', function ($scope, $mdDialog, serviceProvider) {
+    .controller('contactCtrl', function ($scope, serviceProvider) {
 
         serviceProvider.getData('assets/json/media.json').then(data => {
             $scope.$apply(() => {
@@ -137,78 +140,47 @@ function DialogCtrl($scope, $mdDialog, item) {
 };
 'use strict';
 
-angular.module('contact', [])
-    .controller('contactCtrl', function ($scope, $mdDialog, serviceProvider) {
-
-        serviceProvider.getData('assets/json/media.json').then(data => {
-            $scope.$apply(() => {
-                $scope.medias = data.medias;
-            });
-        });
-
-        $scope.goTo = media => {
-            switch (true){
-                case media.url !== null && media.url !== undefined && media.url.length > 0:
-                    window.open(media.url, '_blank');
-                    break;
-
-                case media.mail !== null && media.mail !== undefined && media.mail.length > 0:
-                    window.location.href = 'mailto:' + media.mail;
-                    break;
-
-                case media.qr !== null && media.qr !== undefined && media.qr.length > 0:
-                    const content = '<img src="' + media.qr + '" width="200px"/>';
-                    break;
-
-                default:
-                    console.log('no data');
-            }
-        };
-
-        // show dialog
-        $scope.showDialog = function (ev, item) {
-            console.log(ev)
-            $mdDialog.show({
-                controller: DialogCtrl,
-                templateUrl: 'assets/partials/media-dialog.html',
-                parent: angular.element(document.body),
-                targetEvent: ev,
-                clickOutsideToClose: true,
-                locals: {
-                    item: item
-                }
-
-            })
-                .then(function (answer) {
-                    $scope.status = 'You said the information was "' + answer + '".';
-                }, function () {
-                    $scope.status = 'You cancelled the dialog.';
-                });
-        };
-
+angular.module('face0', [])
+    .controller('face0Ctrl', function ($scope) {
 
     });
 
+'use strict';
 
-// dialog controller
-function DialogCtrl($scope, $mdDialog, item) {
-    $scope.item = item;
+angular.module('face1', [])
+    .controller('face1Ctrl', function ($scope) {
 
-    // hide dialog
-    $scope.hide = function () {
-        $mdDialog.hide();
-    };
+        const partialsPath = 'dist/app/components/';
+        $scope.cubeInception = partialsPath + 'cube-inception/main.html';
+    });
 
-    // cancel dialog
-    $scope.cancel = function () {
-        $mdDialog.cancel();
-    };
+'use strict';
 
-    // answer dialog
-    $scope.answer = function (answer) {
-        $mdDialog.hide(answer);
-    };
-};
+angular.module('face2', [])
+    .controller('face2Ctrl', function ($scope) {
+
+        angular.element(document.querySelector('body'))[0].addEventListener('mouseover', () => {
+
+            setTimeout(() => {
+                $scope.$apply(() => {
+                    const face = angular.element(document.querySelector('.face-2'))[0],
+                        st = window.getComputedStyle(face, null),
+                        tr = st.getPropertyValue('transform');
+                    console.log(tr)
+                });
+
+            }, 100)
+        });
+
+    });
+
+'use strict';
+
+angular.module('footer', [])
+    .controller('footerCtrl', function ($scope) {
+        $scope.name = 'tocausan';
+        $scope.year = (new Date()).getFullYear();
+    });
 'use strict';
 
 angular.module('home', [])
@@ -247,49 +219,17 @@ angular.module('home', [])
         };
 
         const partialsPath = 'dist/app/components/';
-        $scope.cubeInception = partialsPath + 'cube-inception/main.html';
+        $scope.face0 = partialsPath + 'face-0/main.html';
+        $scope.face1 = partialsPath + 'face-1/main.html';
+        $scope.face2 = partialsPath + 'face-2/main.html';
     });
 
 'use strict';
 
-angular.module('footer', [])
-    .controller('footerCtrl', function ($scope) {
-        $scope.name = 'tocausan';
-        $scope.year = (new Date()).getFullYear();
-    });
-'use strict';
+angular.module('skills', [])
+    .controller('skillsCtrl', function ($scope, serviceProvider) {
 
-// init module
-angular.module('skills', ['ngMaterial'])
-    .controller('skillsCtrl', function ($scope, $mdDialog) {
-
-        // get data
-        ($scope.getData = function () {
-            // get media data
-            var skillFile = 'assets/json/skill.json';
-            $scope.languages = [];
-            $scope.skills = [];
-            // promise
-            new Promise(function (resolve, reject) {
-                // New XMLHttpRequest
-                var xhr = new XMLHttpRequest();
-                xhr.open('get', skillFile, true);
-                xhr.responseType = 'json';
-                xhr.onload = function () {
-                    if (xhr.status == 200) {
-                        // Success
-                        resolve(xhr.response);
-                        // Set total pages
-                        $scope.$apply(function () {
-                            $scope.languages = xhr.response.languages;
-                            $scope.skills = xhr.response.skills;
-                        });
-                    } else {
-                        // Error
-                        reject(xhr.status);
-                    }
-                };
-                xhr.send();
-            });
-        })();
+        serviceProvider.getData('assets/json/skill.json').then(data => {
+            console.log(data)
+        })
     });

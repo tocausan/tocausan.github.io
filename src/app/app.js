@@ -6,6 +6,9 @@ angular.module('app', [
     'filters',
     'services',
     'home',
+    'face0',
+    'face1',
+    'face2',
     'contact',
     'skills',
     'footer'

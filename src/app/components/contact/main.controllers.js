@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('contact', [])
-    .controller('contactCtrl', function ($scope, $mdDialog, serviceProvider) {
+    .controller('contactCtrl', function ($scope, serviceProvider) {
 
         serviceProvider.getData('assets/json/media.json').then(data => {
             $scope.$apply(() => {

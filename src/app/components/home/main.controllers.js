@@ -36,5 +36,7 @@ angular.module('home', [])
         };
 
         const partialsPath = 'dist/app/components/';
-        $scope.cubeInception = partialsPath + 'cube-inception/main.html';
+        $scope.face0 = partialsPath + 'face-0/main.html';
+        $scope.face1 = partialsPath + 'face-1/main.html';
+        $scope.face2 = partialsPath + 'face-2/main.html';
     });
