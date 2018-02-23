@@ -34,4 +34,7 @@ angular.module('home', [])
                     break;
             }
         };
+
+        const partialsPath = 'dist/app/components/';
+        $scope.cubeInception = partialsPath + 'cube-inception/main.html';
     });

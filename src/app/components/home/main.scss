@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+
 .home-section {
   display: flex;
   justify-content: center;
@@ -7,27 +9,8 @@
   z-index: 10;
   position: absolute;
   transition: .2s;
+  background-color: white;
   overflow: hidden;
-
-  &.top,
-  &.right,
-  &.bottom,
-  &.left {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
-  }
-
-  &.top {
-    transform: translateY(-120%);
-  }
-  &.right {
-    transform: translateX(120%);
-  }
-  &.bottom {
-    transform: translateY(120%);
-  }
-  &.left {
-    transform: translateX(-120%);
-  }
 
   .home-component {
     display: flex;
@@ -36,7 +19,46 @@
     width: 100%;
     height: 100%;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, .2);
-    background-color: white;
+
+    .front {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      transition: .2s;
+    }
+
+    .back {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: .2s;
+      opacity: 0;
+      transform: rotateX(180deg);
+
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        font-size: 1.5em;
+        font-weight: lighter;
+        letter-spacing: 20px;
+        z-index: 11;
+      }
+      .cube-inception {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+      }
+    }
 
     .direction {
       position: absolute;
@@ -61,8 +83,37 @@
         transform: translateX(-350%);
       }
     }
-
   }
+
+  &.top,
+  &.right,
+  &.bottom,
+  &.left {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+  }
+
+  &.top {
+    // transform: translateY(-120%);
+    transform: rotateX(180deg);
+
+    .front {
+      opacity: 0;
+    }
+
+    .back {
+      opacity: 1;
+    }
+  }
+  &.right {
+    transform: translateX(120%);
+  }
+  &.bottom {
+    transform: translateY(120%);
+  }
+  &.left {
+    transform: translateX(-120%);
+  }
+
 }
 
 @keyframes open {
