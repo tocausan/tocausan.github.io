@@ -1,34 +1,10 @@
 'use strict';
 
-angular.module('app', [
-    'ngAnimate',
-    'ngAria',
-    'filters',
-    'services',
-    'home',
-    'face0',
-    'face1',
-    'face2',
-    'contact',
-    'skills',
-    'footer'
-])
-    .controller('appCtrl', function ($scope) {
-        const partialsPath = 'dist/app/components/',
-            sections = [
-                'home',
-                'contact',
-                'skills',
-                'footer'
-            ];
-
-        $scope.sections = [];
-        sections.forEach(section => {
-            $scope.sections.push({
-                name: section,
-                url: partialsPath + section + '/main.html'
-            })
-        });
+angular.module('filters', [])
+    .filter('capitalize', () => {
+        return (input) => {
+            return (!!input) ? input.charAt(0).toUpperCase() + input.substr(1).toLowerCase() : '';
+        }
     });
 'use strict';
 
@@ -50,7 +26,7 @@ angular.module('services', [])
                     xhr.send();
                 });
             }
-        }
+    }
     });
 
 
@@ -58,10 +34,79 @@ angular.module('services', [])
 
 'use strict';
 
-angular.module('filters', [])
-    .filter('capitalize', () => {
-        return (input) => {
-            return (!!input) ? input.charAt(0).toUpperCase() + input.substr(1).toLowerCase() : '';
+angular.module('app', [
+    'ngAnimate',
+    'ngAria',
+    'filters',
+    'services',
+    'home',
+    'logo',
+    'name',
+    'contact',
+    'skills',
+    'footer'
+])
+    .controller('appCtrl', function ($scope, serviceProvider) {
+        const partialsPath = 'dist/app/components/',
+            sections = [
+                'app',
+                'footer'
+            ];
+
+        $scope.sections = [];
+        sections.forEach(section => {
+            $scope.sections.push({
+                name: section,
+                url: partialsPath + section + '/main.html'
+            })
+        });
+
+        $scope.face0 = partialsPath + 'logo/main.html';
+        $scope.face1 = partialsPath + 'name/main.html';
+        $scope.face2 = partialsPath + 'contact/main.html';
+        $scope.face3 = partialsPath + 'contact/main.html';
+        $scope.face4 = partialsPath + 'contact/main.html';
+
+        $scope.activeFace = 'face-0';
+        $scope.slide = ($event, direction) => {
+            const directions = ['top', 'right', 'bottom', 'left'],
+                card = angular.element(document.getElementsByClassName('app-component'))[0];
+
+            direction = !card.classList.contains(directions[0]) &&
+            !card.classList.contains(directions[1]) &&
+            !card.classList.contains(directions[2]) &&
+            !card.classList.contains(directions[3]) ? direction : null;
+
+            switch (direction) {
+                // top
+                case directions[0]:
+                    $scope.activeFace = 'face-1';
+                    card.classList.add(directions[0]);
+                    break;
+                // right
+                case directions[1]:
+                    $scope.activeFace = 'face-2';
+                    card.classList.add(directions[1]);
+                    break;
+                // bottom
+                case directions[2]:
+                    $scope.activeFace = 'face-3';
+                    card.classList.add(directions[2]);
+                    break;
+                // left
+                case directions[3]:
+                    $scope.activeFace = 'face-4';
+                    card.classList.add(directions[3]);
+                    break;
+                // null
+                default:
+                    $scope.activeFace = 'face-0';
+                    card.classList.contains(directions[0]) ? card.classList.remove(directions[0]) : null;
+                    card.classList.contains(directions[1]) ? card.classList.remove(directions[1]) : null;
+                    card.classList.contains(directions[2]) ? card.classList.remove(directions[2]) : null;
+                    card.classList.contains(directions[3]) ? card.classList.remove(directions[3]) : null;
+                    break;
+            }
         }
     });
 'use strict';
@@ -140,42 +185,6 @@ function DialogCtrl($scope, $mdDialog, item) {
 };
 'use strict';
 
-angular.module('face0', [])
-    .controller('face0Ctrl', function ($scope) {
-
-    });
-
-'use strict';
-
-angular.module('face1', [])
-    .controller('face1Ctrl', function ($scope) {
-
-        const partialsPath = 'dist/app/components/';
-        $scope.cubeInception = partialsPath + 'cube-inception/main.html';
-    });
-
-'use strict';
-
-angular.module('face2', [])
-    .controller('face2Ctrl', function ($scope) {
-
-        angular.element(document.querySelector('body'))[0].addEventListener('mouseover', () => {
-
-            setTimeout(() => {
-                $scope.$apply(() => {
-                    const face = angular.element(document.querySelector('.face-2'))[0],
-                        st = window.getComputedStyle(face, null),
-                        tr = st.getPropertyValue('transform');
-                    console.log(tr)
-                });
-
-            }, 100)
-        });
-
-    });
-
-'use strict';
-
 angular.module('footer', [])
     .controller('footerCtrl', function ($scope) {
         $scope.name = 'tocausan';
@@ -184,44 +193,34 @@ angular.module('footer', [])
 'use strict';
 
 angular.module('home', [])
-    .controller('homeCtrl', function ($scope) {
+    .controller('homeCtrl', function ($scope, serviceProvider) {
+        $scope.activeFace = null;
 
-        $scope.move = ($event, direction) => {
-            const directions = ['top', 'right', 'bottom', 'left'],
-                //element = $event.currentTarget;
-                element = angular.element(document.querySelector('.home-section'))[0];
-
-            direction = !element.classList.contains(directions[0]) &&
-            !element.classList.contains(directions[1]) &&
-            !element.classList.contains(directions[2]) &&
-            !element.classList.contains(directions[3]) ? direction : null;
-
-            switch (direction) {
-                case directions[0]:
-                    element.classList.add(directions[0]);
-                    break;
-                case directions[1]:
-                    element.classList.add(directions[1]);
-                    break;
-                case directions[2]:
-                    element.classList.add(directions[2]);
-                    break;
-                case directions[3]:
-                    element.classList.add(directions[3]);
-                    break;
-                default:
-                    element.classList.contains(directions[0]) ? element.classList.remove(directions[0]) : null;
-                    element.classList.contains(directions[1]) ? element.classList.remove(directions[1]) : null;
-                    element.classList.contains(directions[2]) ? element.classList.remove(directions[2]) : null;
-                    element.classList.contains(directions[3]) ? element.classList.remove(directions[3]) : null;
-                    break;
-            }
+        $scope.slide = ($event, direction) => {
+            serviceProvider.slide($event, direction, 'home-section', $scope.activeFace);
         };
 
+
         const partialsPath = 'dist/app/components/';
-        $scope.face0 = partialsPath + 'face-0/main.html';
-        $scope.face1 = partialsPath + 'face-1/main.html';
-        $scope.face2 = partialsPath + 'face-2/main.html';
+        $scope.face0 = partialsPath + 'logo/main.html';
+        $scope.face1 = partialsPath + 'name/main.html';
+        $scope.face2 = partialsPath + 'skills/main.html';
+    });
+
+'use strict';
+
+angular.module('logo', [])
+    .controller('logoCtrl', function ($scope) {
+
+    });
+
+'use strict';
+
+angular.module('name', [])
+    .controller('nameCtrl', function ($scope) {
+
+        const partialsPath = 'dist/app/components/';
+        $scope.cubeInception = partialsPath + 'cube-inception/main.html';
     });
 
 'use strict';
@@ -231,5 +230,10 @@ angular.module('skills', [])
 
         serviceProvider.getData('assets/json/skill.json').then(data => {
             console.log(data)
-        })
+            $scope.$apply(() => {
+                $scope.skills = data.skills;
+                $scope.languages = data.languages;
+            });
+        });
+
     });

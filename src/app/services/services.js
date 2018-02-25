@@ -18,7 +18,7 @@ angular.module('services', [])
                     xhr.send();
                 });
             }
-        }
+    }
     });
 
 

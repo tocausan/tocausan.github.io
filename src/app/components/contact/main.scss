@@ -1,70 +1,58 @@
-.contact-section {
-  width: 50%;
-  height: 50%;
-  background-color: white;
-  z-index: 9;
-  position: absolute;
-  transition: .5s;
-  overflow: hidden;
+.contact-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
+  width: 100%;
+  height: 100%;
 
-  .contact-component {
+  .medias {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-
     width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, .2) inset;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: auto;
 
-    .medias {
+    .media {
       display: flex;
-      justify-content: space-around;
-      align-items: center;
+      justify-content: center;
+      align-items: flex-start;
+      flex: 1;
       flex-wrap: wrap;
       width: 100%;
-      max-height: 100%;
-      max-width: 100%;
-      overflow: auto;
+      height: 100%;
 
-      .media {
+      .icon {
         display: flex;
         justify-content: center;
-        align-items: flex-start;
-        flex: 1;
+        align-items: center;
         flex-wrap: wrap;
         width: 100%;
-        height: 100%;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 25px;
+      }
 
-        .icon {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-wrap: wrap;
-          width: 100%;
-          padding: 10px;
-          cursor: pointer;
-          font-size: 25px;
-        }
+      .name,
+      .account {
+        width: 100%;
+        font-size: 14px;
+        font-family: "Helvetica Neue";
+        font-weight: lighter;
+        text-align: center;
+        padding-top: 5px;
+        transition: .3s;
+        opacity: 0;
+      }
 
+      &:hover {
         .name,
         .account {
-          width: 100%;
-          font-size: 14px;
-          font-family: "Helvetica Neue";
-          font-weight: lighter;
-          text-align: center;
-          padding-top: 5px;
-          transition: .3s;
-          opacity: 0;
-        }
-
-        &:hover {
-          .name,
-          .account {
-            opacity: 1;
-          }
+          opacity: 1;
         }
       }
     }

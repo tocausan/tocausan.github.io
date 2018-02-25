@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Sanchez');
+
+$sanchez_font: 'Sanchez', serif;
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  font-family: $sanchez_font;
+  overflow: hidden;
+
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    transition: .5s;
+    overflow: hidden;
+
+    &.app-section {
+      z-index: 49;
+    }
+
+    .app-component {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 50%;
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, .2);
+      //background-color: rgba(255,255,100,.3);
+
+      .card,
+      .face {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        transition: .5s;
+        overflow: hidden;
+        position: absolute;
+        //background-color: rgba(255,200,100,.3);
+      }
+
+      .direction {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+        height: 10%;
+        cursor: pointer;
+        transition: .1s;
+        z-index: 50;
+
+        &.top {
+          transform: translateY(-350%);
+        }
+        &.right {
+          transform: translateX(350%);
+        }
+        &.bottom {
+          transform: translateY(350%);
+        }
+        &.left {
+          transform: translateX(-350%);
+        }
+      }
+
+      &.top,
+      &.right,
+      &.bottom,
+      &.left {
+        .card {
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+        }
+      }
+
+      &.top {
+        .card,
+        .face-0 {
+          transform: rotateX(180deg);
+
+          .direction {
+            &.right,
+            &.bottom,
+            &.left {
+              display: none;
+            }
+          }
+        }
+
+        .face-0 {
+          opacity: 0;
+        }
+
+        .face-1 {
+          &.active {
+            transform: rotateX(180deg);
+          }
+        }
+      }
+      &.right {
+        .card,
+        .face-0 {
+          transform: translateX(120%);
+
+          .direction {
+            &.right,
+            &.bottom,
+            &.top {
+              display: none;
+            }
+          }
+        }
+        .face-1 {
+          &.active {
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, .2) inset;
+          }
+        }
+      }
+      &.bottom {
+        .card,
+        .face-0 {
+          transform: translateY(120%);
+
+          .direction {
+            &.right,
+            &.bottom,
+            &.left {
+              display: none;
+            }
+          }
+        }
+        .face-3 {
+          &.active {
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, .2) inset;
+          }
+        }
+      }
+      &.left {
+        .card,
+        .face-0 {
+          transform: translateX(-120%);
+
+          .direction {
+            &.top,
+            &.bottom,
+            &.left {
+              display: none;
+            }
+          }
+        }
+        .face-4 {
+          &.active {
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, .2) inset;
+          }
+        }
+      }
+    }
+  }
+
+  :focus {
+    outline: 0;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+}
+
+
+

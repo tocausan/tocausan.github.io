@@ -5,5 +5,10 @@ angular.module('skills', [])
 
         serviceProvider.getData('assets/json/skill.json').then(data => {
             console.log(data)
-        })
+            $scope.$apply(() => {
+                $scope.skills = data.skills;
+                $scope.languages = data.languages;
+            });
+        });
+
     });
