@@ -177,7 +177,7 @@ body {
   .contact-component.active {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset;
     opacity: 1;
-    animation: shadow .5s; }
+    animation: shadow .2s; }
   .contact-component .medias {
     display: flex;
     justify-content: space-around;
@@ -323,14 +323,6 @@ body {
     position: fixed;
     bottom: 0; }
 
-.logo-component {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  transition: .2s; }
-
 .home-section {
   z-index: 49; }
   .home-section .home-component {
@@ -366,6 +358,14 @@ body {
     transform: translateY(120%); }
   .home-section.left {
     transform: translateX(-120%); }
+
+.logo-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: .2s; }
 
 .name-component {
   display: flex;
