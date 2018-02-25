@@ -165,6 +165,67 @@ body {
   body ::-webkit-scrollbar {
     display: none; }
 
+.contact-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  opacity: 0; }
+  .contact-component.active {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset;
+    opacity: 1;
+    animation: shadow .5s; }
+  .contact-component .medias {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: auto; }
+    .contact-component .medias .media {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex: 1;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%; }
+      .contact-component .medias .media .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 25px; }
+      .contact-component .medias .media .name,
+      .contact-component .medias .media .account {
+        width: 100%;
+        font-size: 14px;
+        font-family: "Helvetica Neue";
+        font-weight: lighter;
+        text-align: center;
+        padding-top: 5px;
+        transition: .3s;
+        opacity: 0; }
+      .contact-component .medias .media:hover .name,
+      .contact-component .medias .media:hover .account {
+        opacity: 1; }
+
+@keyframes shadow {
+  0% {
+    opacity: 0;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2) inset; }
+  100% {
+    opacity: 1;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset; } }
+
 .cube-inception-component {
   width: 100%;
   height: 100%;
@@ -249,63 +310,6 @@ body {
     transform-origin: 50% 50%;
     transform: rotateX(360deg) rotateY(0deg) rotateZ(360deg); } }
 
-.contact-component {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2) inset; }
-  .contact-component.active {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset;
-    animation: shadow .5s; }
-  .contact-component .medias {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    max-height: 100%;
-    max-width: 100%;
-    overflow: auto; }
-    .contact-component .medias .media {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex: 1;
-      flex-wrap: wrap;
-      width: 100%;
-      height: 100%; }
-      .contact-component .medias .media .icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 25px; }
-      .contact-component .medias .media .name,
-      .contact-component .medias .media .account {
-        width: 100%;
-        font-size: 14px;
-        font-family: "Helvetica Neue";
-        font-weight: lighter;
-        text-align: center;
-        padding-top: 5px;
-        transition: .3s;
-        opacity: 0; }
-      .contact-component .medias .media:hover .name,
-      .contact-component .medias .media:hover .account {
-        opacity: 1; }
-
-@keyframes shadow {
-  0% {
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2) inset; }
-  100% {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset; } }
-
 .footer-section {
   display: flex;
   justify-content: center;
@@ -318,6 +322,14 @@ body {
     width: 100%;
     position: fixed;
     bottom: 0; }
+
+.logo-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: .2s; }
 
 .home-section {
   z-index: 49; }
@@ -354,14 +366,6 @@ body {
     transform: translateY(120%); }
   .home-section.left {
     transform: translateX(-120%); }
-
-.logo-component {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  transition: .2s; }
 
 .name-component {
   display: flex;
