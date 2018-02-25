@@ -47,7 +47,6 @@ body {
         width: 50%;
         height: 50%;
         position: absolute;
-        transition: .3s;
         overflow: hidden;
         position: absolute;
         background-color: white;
@@ -60,6 +59,7 @@ body {
 
       .card{
         background-color: transparent;
+        transition: .3s;
         z-index: 49;
 
         .direction {
