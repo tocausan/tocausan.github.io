@@ -10,7 +10,7 @@ angular.module('contact', [])
         });
 
         $scope.goTo = media => {
-            switch (true){
+            switch (true) {
                 case media.url !== null && media.url !== undefined && media.url.length > 0:
                     window.open(media.url, '_blank');
                     break;

@@ -1,4 +1,7 @@
-<div class="contact-component" ng-controller="contactCtrl">
+<div class="contact-component"
+     ng-controller="contactCtrl"
+     ng-init="active = activeFace == 'face-3'"
+     ng-class="{'active': active}">
     <div class="medias">
         <div class="media" ng-repeat="media in medias">
             <div class="name" ng-bind="media.name"></div>

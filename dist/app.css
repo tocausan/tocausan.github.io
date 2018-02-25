@@ -126,9 +126,6 @@ body {
         body .section .app-component.right .face-0 .direction.bottom,
         body .section .app-component.right .face-0 .direction.top {
           display: none; }
-      html .section .app-component.right .face-2.active,
-      body .section .app-component.right .face-2.active {
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset; }
       html .section .app-component.bottom .card,
       html .section .app-component.bottom .face-0,
       body .section .app-component.bottom .card,
@@ -145,9 +142,6 @@ body {
         body .section .app-component.bottom .face-0 .direction.bottom,
         body .section .app-component.bottom .face-0 .direction.left {
           display: none; }
-      html .section .app-component.bottom .face-3.active,
-      body .section .app-component.bottom .face-3.active {
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset; }
       html .section .app-component.left .card,
       html .section .app-component.left .face-0,
       body .section .app-component.left .card,
@@ -164,62 +158,12 @@ body {
         body .section .app-component.left .face-0 .direction.bottom,
         body .section .app-component.left .face-0 .direction.left {
           display: none; }
-      html .section .app-component.left .face-4.active,
-      body .section .app-component.left .face-4.active {
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset; }
   html :focus,
   body :focus {
     outline: 0; }
   html ::-webkit-scrollbar,
   body ::-webkit-scrollbar {
     display: none; }
-
-.contact-component {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100%; }
-  .contact-component .medias {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    max-height: 100%;
-    max-width: 100%;
-    overflow: auto; }
-    .contact-component .medias .media {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex: 1;
-      flex-wrap: wrap;
-      width: 100%;
-      height: 100%; }
-      .contact-component .medias .media .icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 25px; }
-      .contact-component .medias .media .name,
-      .contact-component .medias .media .account {
-        width: 100%;
-        font-size: 14px;
-        font-family: "Helvetica Neue";
-        font-weight: lighter;
-        text-align: center;
-        padding-top: 5px;
-        transition: .3s;
-        opacity: 0; }
-      .contact-component .medias .media:hover .name,
-      .contact-component .medias .media:hover .account {
-        opacity: 1; }
 
 .cube-inception-component {
   width: 100%;
@@ -304,6 +248,63 @@ body {
   to {
     transform-origin: 50% 50%;
     transform: rotateX(360deg) rotateY(0deg) rotateZ(360deg); } }
+
+.contact-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2) inset; }
+  .contact-component.active {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset;
+    animation: shadow .5s; }
+  .contact-component .medias {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: auto; }
+    .contact-component .medias .media {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex: 1;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%; }
+      .contact-component .medias .media .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 25px; }
+      .contact-component .medias .media .name,
+      .contact-component .medias .media .account {
+        width: 100%;
+        font-size: 14px;
+        font-family: "Helvetica Neue";
+        font-weight: lighter;
+        text-align: center;
+        padding-top: 5px;
+        transition: .3s;
+        opacity: 0; }
+      .contact-component .medias .media:hover .name,
+      .contact-component .medias .media:hover .account {
+        opacity: 1; }
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2) inset; }
+  100% {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset; } }
 
 .footer-section {
   display: flex;

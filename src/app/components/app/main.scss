@@ -137,11 +137,6 @@ body {
             }
           }
         }
-        .face-2 {
-          &.active {
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, .2) inset;
-          }
-        }
       }
       &.bottom {
         .card,
@@ -156,11 +151,6 @@ body {
             }
           }
         }
-        .face-3 {
-          &.active {
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, .2) inset;
-          }
-        }
       }
       &.left {
         .card,
@@ -173,11 +163,6 @@ body {
             &.left {
               display: none;
             }
-          }
-        }
-        .face-4 {
-          &.active {
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, .2) inset;
           }
         }
       }
