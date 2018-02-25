@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Sanchez");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Raleway");
 html,
 body {
   display: flex;
@@ -46,7 +45,18 @@ body {
         position: absolute;
         transition: .5s;
         overflow: hidden;
-        position: absolute; }
+        position: absolute;
+        background-color: white;
+        z-index: 48; }
+        html .section .app-component .card.face-0,
+        html .section .app-component .face.face-0,
+        body .section .app-component .card.face-0,
+        body .section .app-component .face.face-0 {
+          z-index: 49; }
+      html .section .app-component .card,
+      body .section .app-component .card {
+        background-color: transparent;
+        z-index: 50; }
       html .section .app-component .direction,
       body .section .app-component .direction {
         position: absolute;
@@ -114,8 +124,8 @@ body {
         body .section .app-component.right .face-0 .direction.bottom,
         body .section .app-component.right .face-0 .direction.top {
           display: none; }
-      html .section .app-component.right .face-1.active,
-      body .section .app-component.right .face-1.active {
+      html .section .app-component.right .face-2.active,
+      body .section .app-component.right .face-2.active {
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset; }
       html .section .app-component.bottom .card,
       html .section .app-component.bottom .face-0,
@@ -306,42 +316,6 @@ body {
     position: fixed;
     bottom: 0; }
 
-.home-section {
-  z-index: 49; }
-  .home-section .home-component {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2); }
-    .home-section .home-component .face {
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%; }
-    .home-section .home-component .face-1 {
-      opacity: 0;
-      transition: .5s; }
-  .home-section.top, .home-section.right, .home-section.bottom, .home-section.left {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); }
-  .home-section.top {
-    transform: rotateX(180deg); }
-    .home-section.top .face-0 {
-      opacity: 0; }
-    .home-section.top .face-1 {
-      opacity: 1; }
-    .home-section.top .direction.right, .home-section.top .direction.bottom, .home-section.top .direction.left {
-      display: none; }
-  .home-section.right {
-    transform: translateX(120%); }
-  .home-section.bottom {
-    transform: translateY(120%); }
-  .home-section.left {
-    transform: translateX(-120%); }
-
 .logo-component {
   display: flex;
   justify-content: center;
@@ -349,31 +323,6 @@ body {
   width: 100%;
   height: 100%;
   transition: .2s; }
-
-.name-component {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  transition: .2s;
-  transform: rotateX(180deg); }
-  .name-component .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    font-size: 1.2em;
-    font-weight: lighter;
-    letter-spacing: .3em;
-    z-index: 10; }
-  .name-component .cube-inception {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 11; }
 
 .skills-section {
   z-index: 47; }
@@ -421,3 +370,28 @@ body {
       .skills-section .skills-component svg rect {
         shape-rendering: optimizeQuality;
         fill: #ff6961; }
+
+.name-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: .2s;
+  transform: rotateX(180deg); }
+  .name-component .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: lighter;
+    letter-spacing: .3em;
+    z-index: 10; }
+  .name-component .cube-inception {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 11; }

@@ -50,7 +50,17 @@ body {
         transition: .5s;
         overflow: hidden;
         position: absolute;
-        //background-color: rgba(255,200,100,.3);
+        background-color: white;
+        z-index: 48;
+
+        &.face-0{
+          z-index: 49;
+        }
+      }
+
+      .card{
+        background-color: transparent;
+        z-index: 50;
       }
 
       .direction {
@@ -124,7 +134,7 @@ body {
             }
           }
         }
-        .face-1 {
+        .face-2 {
           &.active {
             box-shadow: 2px 2px 5px rgba(0, 0, 0, .2) inset;
           }
