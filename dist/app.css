@@ -43,7 +43,7 @@ body {
         width: 50%;
         height: 50%;
         position: absolute;
-        transition: .5s;
+        transition: .3s;
         overflow: hidden;
         position: absolute;
         background-color: white;
@@ -52,34 +52,34 @@ body {
         html .section .app-component .face.face-0,
         body .section .app-component .card.face-0,
         body .section .app-component .face.face-0 {
-          z-index: 49; }
+          z-index: 47; }
       html .section .app-component .card,
       body .section .app-component .card {
         background-color: transparent;
-        z-index: 50; }
-      html .section .app-component .direction,
-      body .section .app-component .direction {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 10%;
-        height: 10%;
-        cursor: pointer;
-        transition: .1s;
-        z-index: 50; }
-        html .section .app-component .direction.top,
-        body .section .app-component .direction.top {
-          transform: translateY(-350%); }
-        html .section .app-component .direction.right,
-        body .section .app-component .direction.right {
-          transform: translateX(350%); }
-        html .section .app-component .direction.bottom,
-        body .section .app-component .direction.bottom {
-          transform: translateY(350%); }
-        html .section .app-component .direction.left,
-        body .section .app-component .direction.left {
-          transform: translateX(-350%); }
+        z-index: 49; }
+        html .section .app-component .card .direction,
+        body .section .app-component .card .direction {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 10%;
+          height: 10%;
+          cursor: pointer;
+          transition: .1s;
+          z-index: 50; }
+          html .section .app-component .card .direction.top,
+          body .section .app-component .card .direction.top {
+            transform: translateY(-350%); }
+          html .section .app-component .card .direction.right,
+          body .section .app-component .card .direction.right {
+            transform: translateX(350%); }
+          html .section .app-component .card .direction.bottom,
+          body .section .app-component .card .direction.bottom {
+            transform: translateY(350%); }
+          html .section .app-component .card .direction.left,
+          body .section .app-component .card .direction.left {
+            transform: translateX(-350%); }
       html .section .app-component.top .card, html .section .app-component.right .card, html .section .app-component.bottom .card, html .section .app-component.left .card,
       body .section .app-component.top .card,
       body .section .app-component.right .card,
@@ -219,6 +219,19 @@ body {
       .contact-component .medias .media:hover .account {
         opacity: 1; }
 
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  .footer-section .footer-component {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    position: fixed;
+    bottom: 0; }
+
 .cube-inception-component {
   width: 100%;
   height: 100%;
@@ -303,19 +316,6 @@ body {
     transform-origin: 50% 50%;
     transform: rotateX(360deg) rotateY(0deg) rotateZ(360deg); } }
 
-.footer-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%; }
-  .footer-section .footer-component {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    position: fixed;
-    bottom: 0; }
-
 .logo-component {
   display: flex;
   justify-content: center;
@@ -323,6 +323,31 @@ body {
   width: 100%;
   height: 100%;
   transition: .2s; }
+
+.name-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: .2s;
+  transform: rotateX(180deg); }
+  .name-component .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: lighter;
+    letter-spacing: .3em;
+    z-index: 10; }
+  .name-component .cube-inception {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 11; }
 
 .skills-section {
   z-index: 47; }
@@ -370,28 +395,3 @@ body {
       .skills-section .skills-component svg rect {
         shape-rendering: optimizeQuality;
         fill: #ff6961; }
-
-.name-component {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  transition: .2s;
-  transform: rotateX(180deg); }
-  .name-component .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    font-size: 1.2em;
-    font-weight: lighter;
-    letter-spacing: .3em;
-    z-index: 10; }
-  .name-component .cube-inception {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 11; }

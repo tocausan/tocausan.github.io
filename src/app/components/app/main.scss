@@ -47,46 +47,48 @@ body {
         width: 50%;
         height: 50%;
         position: absolute;
-        transition: .5s;
+        transition: .3s;
         overflow: hidden;
         position: absolute;
         background-color: white;
         z-index: 48;
 
         &.face-0{
-          z-index: 49;
+          z-index: 47;
         }
       }
 
       .card{
         background-color: transparent;
-        z-index: 50;
+        z-index: 49;
+
+        .direction {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 10%;
+          height: 10%;
+          cursor: pointer;
+          transition: .1s;
+          z-index: 50;
+
+          &.top {
+            transform: translateY(-350%);
+          }
+          &.right {
+            transform: translateX(350%);
+          }
+          &.bottom {
+            transform: translateY(350%);
+          }
+          &.left {
+            transform: translateX(-350%);
+          }
+        }
+
       }
 
-      .direction {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 10%;
-        height: 10%;
-        cursor: pointer;
-        transition: .1s;
-        z-index: 50;
-
-        &.top {
-          transform: translateY(-350%);
-        }
-        &.right {
-          transform: translateX(350%);
-        }
-        &.bottom {
-          transform: translateY(350%);
-        }
-        &.left {
-          transform: translateX(-350%);
-        }
-      }
 
       &.top,
       &.right,
