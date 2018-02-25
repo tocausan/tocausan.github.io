@@ -90,19 +90,27 @@ body {
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); }
       html .section .app-component.top .card,
       html .section .app-component.top .face-0,
+      html .section .app-component.top .face-1,
       body .section .app-component.top .card,
-      body .section .app-component.top .face-0 {
+      body .section .app-component.top .face-0,
+      body .section .app-component.top .face-1 {
         transform: rotateX(180deg); }
         html .section .app-component.top .card .direction.right, html .section .app-component.top .card .direction.bottom, html .section .app-component.top .card .direction.left,
         html .section .app-component.top .face-0 .direction.right,
         html .section .app-component.top .face-0 .direction.bottom,
         html .section .app-component.top .face-0 .direction.left,
+        html .section .app-component.top .face-1 .direction.right,
+        html .section .app-component.top .face-1 .direction.bottom,
+        html .section .app-component.top .face-1 .direction.left,
         body .section .app-component.top .card .direction.right,
         body .section .app-component.top .card .direction.bottom,
         body .section .app-component.top .card .direction.left,
         body .section .app-component.top .face-0 .direction.right,
         body .section .app-component.top .face-0 .direction.bottom,
-        body .section .app-component.top .face-0 .direction.left {
+        body .section .app-component.top .face-0 .direction.left,
+        body .section .app-component.top .face-1 .direction.right,
+        body .section .app-component.top .face-1 .direction.bottom,
+        body .section .app-component.top .face-1 .direction.left {
           display: none; }
       html .section .app-component.top .face-0,
       body .section .app-component.top .face-0 {
@@ -228,90 +236,6 @@ body {
   100% {
     opacity: 1;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset; } }
-
-.cube-inception-component {
-  width: 100%;
-  height: 100%;
-  z-index: 9;
-  position: absolute;
-  transition: .5s;
-  overflow: hidden; }
-  .cube-inception-component .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; }
-    .cube-inception-component .container .cube-0,
-    .cube-inception-component .container .cube-1 {
-      position: absolute;
-      animation-timing-function: linear;
-      transform-style: preserve-3d; }
-      .cube-inception-component .container .cube-0 .face,
-      .cube-inception-component .container .cube-1 .face {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        line-height: 100px;
-        text-align: center;
-        font-size: 80px;
-        opacity: 0.3;
-        border: 1px solid #ff6961; }
-    .cube-inception-component .container .cube-0 {
-      width: 50px;
-      height: 50px;
-      animation: rotation-0 10s linear infinite; }
-      .cube-inception-component .container .cube-0 .face {
-        width: 50px;
-        height: 50px; }
-      .cube-inception-component .container .cube-0 .face-1 {
-        transform: translateZ(calc(50px / 2)); }
-      .cube-inception-component .container .cube-0 .face-2 {
-        transform: translateZ(0px) translateX(0px) translateX(calc(50px / 2)) rotateY(90deg); }
-      .cube-inception-component .container .cube-0 .face-3 {
-        transform: translateZ(0px) translateX(0px) translateX(calc(-50px / 2)) rotateY(-90deg); }
-      .cube-inception-component .container .cube-0 .face-4 {
-        transform: translateZ(0px) translateY(calc(50px / 2)) rotateX(calc(-90deg)); }
-      .cube-inception-component .container .cube-0 .face-5 {
-        transform: translateZ(0px) translateY(calc(-50px / 2)) rotateX(90deg); }
-      .cube-inception-component .container .cube-0 .face-6 {
-        transform: translateZ(calc(-50px / 2)); }
-    .cube-inception-component .container .cube-1 {
-      width: 100px;
-      height: 100px;
-      animation: rotation-1 10s linear infinite; }
-      .cube-inception-component .container .cube-1 .face {
-        width: 100px;
-        height: 100px; }
-      .cube-inception-component .container .cube-1 .face-1 {
-        transform: translateZ(calc(100px / 2)); }
-      .cube-inception-component .container .cube-1 .face-2 {
-        transform: translateZ(0px) translateX(0px) translateX(calc(100px / 2)) rotateY(90deg); }
-      .cube-inception-component .container .cube-1 .face-3 {
-        transform: translateZ(0px) translateX(0px) translateX(calc(-100px / 2)) rotateY(-90deg); }
-      .cube-inception-component .container .cube-1 .face-4 {
-        transform: translateZ(0px) translateY(calc(100px / 2)) rotateX(calc(-90deg)); }
-      .cube-inception-component .container .cube-1 .face-5 {
-        transform: translateZ(0px) translateY(calc(-100px / 2)) rotateX(90deg); }
-      .cube-inception-component .container .cube-1 .face-6 {
-        transform: translateZ(calc(-100px / 2)); }
-
-@keyframes rotation-0 {
-  from {
-    transform-origin: 50% 50%;
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
-  to {
-    transform-origin: 50% 50%;
-    transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg); } }
-
-@keyframes rotation-1 {
-  from {
-    transform-origin: 50% 50%;
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
-  to {
-    transform-origin: 50% 50%;
-    transform: rotateX(360deg) rotateY(0deg) rotateZ(360deg); } }
 
 .footer-section {
   display: flex;
@@ -441,3 +365,87 @@ body {
       .skills-section .skills-component svg rect {
         shape-rendering: optimizeQuality;
         fill: #ff6961; }
+
+.cube-inception-component {
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  position: absolute;
+  transition: .5s;
+  overflow: hidden; }
+  .cube-inception-component .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    .cube-inception-component .container .cube-0,
+    .cube-inception-component .container .cube-1 {
+      position: absolute;
+      animation-timing-function: linear;
+      transform-style: preserve-3d; }
+      .cube-inception-component .container .cube-0 .face,
+      .cube-inception-component .container .cube-1 .face {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        line-height: 100px;
+        text-align: center;
+        font-size: 80px;
+        opacity: 0.3;
+        border: 1px solid #ff6961; }
+    .cube-inception-component .container .cube-0 {
+      width: 50px;
+      height: 50px;
+      animation: rotation-0 10s linear infinite; }
+      .cube-inception-component .container .cube-0 .face {
+        width: 50px;
+        height: 50px; }
+      .cube-inception-component .container .cube-0 .face-1 {
+        transform: translateZ(calc(50px / 2)); }
+      .cube-inception-component .container .cube-0 .face-2 {
+        transform: translateZ(0px) translateX(0px) translateX(calc(50px / 2)) rotateY(90deg); }
+      .cube-inception-component .container .cube-0 .face-3 {
+        transform: translateZ(0px) translateX(0px) translateX(calc(-50px / 2)) rotateY(-90deg); }
+      .cube-inception-component .container .cube-0 .face-4 {
+        transform: translateZ(0px) translateY(calc(50px / 2)) rotateX(calc(-90deg)); }
+      .cube-inception-component .container .cube-0 .face-5 {
+        transform: translateZ(0px) translateY(calc(-50px / 2)) rotateX(90deg); }
+      .cube-inception-component .container .cube-0 .face-6 {
+        transform: translateZ(calc(-50px / 2)); }
+    .cube-inception-component .container .cube-1 {
+      width: 100px;
+      height: 100px;
+      animation: rotation-1 10s linear infinite; }
+      .cube-inception-component .container .cube-1 .face {
+        width: 100px;
+        height: 100px; }
+      .cube-inception-component .container .cube-1 .face-1 {
+        transform: translateZ(calc(100px / 2)); }
+      .cube-inception-component .container .cube-1 .face-2 {
+        transform: translateZ(0px) translateX(0px) translateX(calc(100px / 2)) rotateY(90deg); }
+      .cube-inception-component .container .cube-1 .face-3 {
+        transform: translateZ(0px) translateX(0px) translateX(calc(-100px / 2)) rotateY(-90deg); }
+      .cube-inception-component .container .cube-1 .face-4 {
+        transform: translateZ(0px) translateY(calc(100px / 2)) rotateX(calc(-90deg)); }
+      .cube-inception-component .container .cube-1 .face-5 {
+        transform: translateZ(0px) translateY(calc(-100px / 2)) rotateX(90deg); }
+      .cube-inception-component .container .cube-1 .face-6 {
+        transform: translateZ(calc(-100px / 2)); }
+
+@keyframes rotation-0 {
+  from {
+    transform-origin: 50% 50%;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  to {
+    transform-origin: 50% 50%;
+    transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg); } }
+
+@keyframes rotation-1 {
+  from {
+    transform-origin: 50% 50%;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  to {
+    transform-origin: 50% 50%;
+    transform: rotateX(360deg) rotateY(0deg) rotateZ(360deg); } }

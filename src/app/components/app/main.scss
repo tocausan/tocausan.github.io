@@ -102,7 +102,8 @@ body {
 
       &.top {
         .card,
-        .face-0 {
+        .face-0,
+        .face-1{
           transform: rotateX(180deg);
 
           .direction {
