@@ -53,6 +53,7 @@ body {
         z-index: 48;
 
         &.face-0{
+          transition: .3s;
           z-index: 47;
         }
       }
