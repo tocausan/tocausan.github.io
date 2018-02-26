@@ -155,6 +155,9 @@ body {
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset;
         opacity: 1;
         animation: to-shadow-inset .2s; }
+        html .section .app-component.bottom .face-3.active > div,
+        body .section .app-component.bottom .face-3.active > div {
+          transform: translate(3px 3px); }
       html .section .app-component.left .card,
       html .section .app-component.left .face-0,
       body .section .app-component.left .card,

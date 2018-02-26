@@ -158,6 +158,10 @@ body {
             box-shadow: 2px 2px 5px rgba(0, 0, 0, .2) inset;
             opacity: 1;
             animation: to-shadow-inset .2s;
+
+            & > div {
+              transform: translate(3px 3px);
+            }
           }
         }
       }
