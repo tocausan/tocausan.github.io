@@ -5,7 +5,15 @@ angular.module('contact', [])
 
         serviceProvider.getData('assets/json/media.json').then(data => {
             $scope.$apply(() => {
-                $scope.medias = data.medias;
+                $scope.medias = [];
+                data.medias.forEach((item, index) => {
+                    setTimeout(() => {
+                        console.log($scope.medias)
+                        $scope.$apply(()=>{
+                            $scope.medias.push(item);
+                        })
+                    }, 10 * index)
+                })
             });
         });
 
